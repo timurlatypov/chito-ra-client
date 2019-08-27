@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+@import "~bulma/sass/utilities/_all.sass";
+
+@import "variables";
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0,0,0,0.95) 0%,
+                  rgba(0,0,0,0.6) 25%,
+                  rgba(0,0,0,0) 100%),
+  url(../images/header/background-1.png);
+  -webkit-filter: contrast(1.1) brightness(1.4);
+  filter: contrast(1.1) brightness(1.4);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top 0;
+}
+
+.header__reserve {
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right:  50%;
+  max-width: 450px;
+  width: 80%;
+  height: 60px;
+  transform: translateX(50%);
+  background: #7a980b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__reserve::after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  background: $backgroung-ormanent no-repeat bottom;
+  display: inline-block;
+  transform: translateX(50%);
+  top: -50px;
+  right: 50%;
+}
+
+// General colors
+
+$background: $white-ter !default
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+// Set your brand colors
+$blue: #282b32;
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$transparent: transparent;
+
+// Update Bulma's global variables
+$family-sans-serif: 'IBM Plex Sans', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$navbar-link: white;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+@import './components/navbar';
+
+
+// Import only what you need from Bulma
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/button.sass";
+@import "~bulma/sass/elements/table.sass";
+@import "~bulma/sass/elements/tag.sass";
+@import "~bulma/sass/elements/notification.sass";
+@import "~bulma/sass/components/message.sass";
+@import "~bulma/sass/elements/form.sass";
+@import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/title.sass";
+@import "~bulma/sass/components/navbar.sass";
+@import "~bulma/sass/layout/hero.sass";
+@import "~bulma/sass/layout/section.sass";
+@import "~bulma/sass/grid/columns.sass";
+
+.columns:last-child {
+  margin-bottom: 0;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  color: $blue;
+  padding: 10px 0;
+
+  &.white {
+    color: white;
+  }
+}
+
+h6 {
+  font-size: $size-6;
+}
+
+h5 {
+  font-size: $size-5;
+}
+
+h4 {
+  font-size: $size-4;
+}
+
+h3 {
+  font-size: $size-3;
+}
+
+h2 {
+  font-size: $size-2;
+}
+
+h1 {
+  font-size: $size-1;
+}
+
+.the-menu-title-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.image-parallax {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0,0,0,0.7) 0%,
+                  rgba(0,0,0,0.4) 25%,
+                  rgba(0,0,0,0.2) 50%,
+                  rgba(0,0,0,0.4) 75%,
+                  rgba(0,0,0,0.7) 100%),
+  url(../images/menu-title/the-menu-title-background.png);
+  -webkit-filter: contrast(1.1) brightness(1.2);
+  filter: contrast(1.1) brightness(1.2);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+@import "components/TheContacts";
+@import 'components/TheMenuPreview';
+
+@import "general/menu-page.scss";
+@import "general/img.scss";
