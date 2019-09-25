@@ -16,9 +16,9 @@
   export default {
       head () {
           return {
-              title: `Чито-ра Грузинская кухня`,
+              title: `Чито-ра - Грузинская кухня и вкуснейшие хинкали`,
               meta: [
-                  { hid: 'description', name: 'description', content: 'Page 1 description' }
+                  { hid: 'description', name: 'description', content: '' }
               ]
           }
       }

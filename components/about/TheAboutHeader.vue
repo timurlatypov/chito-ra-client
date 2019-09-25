@@ -1,7 +1,7 @@
 <template>
     <div class="delivery-header">
         <div class="wrapper">
-            <div class="delivery-header__title">Вкусно. Уютно.<br>По-домашнему.</div>
+            <div class="delivery-header__title">Вкусно. Сытно.<br>По-домашнему.</div>
         </div>
     </div>
 </template>

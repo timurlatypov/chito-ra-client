@@ -1,13 +1,23 @@
 <template>
     <header class="header">
-        <div class="header__filter"></div>
         <no-ssr>
             <div class="header__carousel">
                 <agile navButtons="false" speed="1000" pauseOnHover="false" autoplay="true" autoplaySpeed="7000" dots="false" fade="true" infinite="true">
-                    <div class="slide"><div class="slide-1 full-height"></div></div>
-                    <div class="slide"><div class="slide-2 full-height"></div></div>
-                    <div class="slide"><div class="slide-3 full-height"></div></div>
-                    <div class="slide"><div class="slide-4 full-height"></div></div>
+                    <div class="slide">
+                        <div class="slide-1 full-height">
+                            <div class="slide-text">Вкусно. Сытно.<br>По-домашнему.</div>
+                        </div>
+                    </div>
+                    <div class="slide"><div class="slide-2 full-height">
+                        <div class="slide-text">Первая<br>хинкальная Москвы.</div>
+
+                    </div></div>
+                    <div class="slide"><div class="slide-3 full-height">
+                        <div class="slide-text">Свежие и<br>натуральные продукты.</div>
+                    </div></div>
+                    <div class="slide"><div class="slide-4 full-height">
+                        <div class="slide-text">Мы работаем <br>более 12 лет!</div>
+                    </div></div>
                 </agile>
             </div>
         </no-ssr>
@@ -31,25 +41,23 @@
     @import '../../assets/styles/variables';
     @import '../../assets/styles/media';
 
+    .slide-text {
+        position: absolute;
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-size: 50px;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 11;
+    }
+
     .header {
         position: relative;
         height: 100vh;
-
-        &__filter {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(
-                            to bottom,
-                            rgba(0,0,0,0.99) 0%,
-                            rgba(0,0,0,0.65) 20%,
-                            rgba(0,0,0,0.3) 30%,
-                            rgba(0,0,0,0.1) 100%);
-            -webkit-background-size: cover;
-            background-size: cover;
-            background-position: top 0;
-            z-index: 10;
-        }
 
         &__carousel {
             position: absolute;
@@ -97,26 +105,48 @@
         height: 100vh;
     }
     .slide-1 {
+        position: relative;
         filter: contrast(1.2);
-        background-image: url('../../assets/images/header/background-4.png');
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.90) 0%,
+                        rgba(0,0,0,0.55) 20%,
+                        rgba(0,0,0,0.3) 50%,
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     .slide-2 {
+        position: relative;
         filter: contrast(1.2);
-        background-image: url('../../assets/images/header/background-2.png');
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.90) 0%,
+                        rgba(0,0,0,0.55) 20%,
+                        rgba(0,0,0,0.3) 50%,
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     .slide-3 {
         filter: contrast(1.2);
-        background-image: url('../../assets/images/header/background-3.png');
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.90) 0%,
+                        rgba(0,0,0,0.55) 20%,
+                        rgba(0,0,0,0.3) 50%,
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-3.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     .slide-4 {
         filter: contrast(1.2);
-        background-image: url('../../assets/images/header/background-1.png');
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.90) 0%,
+                        rgba(0,0,0,0.55) 20%,
+                        rgba(0,0,0,0.3) 50%,
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-1.png');
         background-repeat: no-repeat;
         background-size: cover;
     }

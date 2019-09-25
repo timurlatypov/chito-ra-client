@@ -3,17 +3,19 @@
         <div class="item-1">
             <img src="@/assets/images/khinkali.png" alt="">
             <h4>Кухня</h4>
+            <TheButton className="btn-primary">Перейти в Кухню</TheButton>
         </div>
         <div class="item-2">
             <div class="item-2__inner">
                 <p class="">Зарезервировать стол легче простого, просто позвоните нам!</p>
-                <h3>+7 (499) 444-74-74</h3>
+                <a href="tel:74994447474"><h3>+7 (499) 444-74-74</h3></a>
                 <TheButton className="btn-primary">Позвонить</TheButton>
             </div>
         </div>
         <div class="item-3">
             <img src="@/assets/images/grills.png" alt="">
             <h4>Бар</h4>
+            <TheButton className="btn-primary">Перейти в Бар</TheButton>
         </div>
     </div>
 </template>
