@@ -55,7 +55,7 @@ module.exports = {
     },
 
     axios: {
-        baseURL: 'http://api.test/api'
+        baseURL: 'http://apidev.new-chito-ra.site/api'
     },
     css: [
         '~assets/styles/app.scss'
