@@ -61,11 +61,13 @@ module.exports = {
         '~assets/styles/app.scss'
     ],
     plugins: [
-        '@plugins/VueModal',
-        '@plugins/index.js'
+        { src: '@plugins/VueModal'},
+        { src: '@plugins/VueAgile', ssr: false },
+        { src: '@plugins/VueParallax', ssr: false },
+        { src: '@plugins/index.js' }
     ],
 
-    loading: { color: '#3B8070' },
+    loading: { color: '#282b32' },
     /*
     ** Build configuration
     */

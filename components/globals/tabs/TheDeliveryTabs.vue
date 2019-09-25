@@ -1,0 +1,199 @@
+<template>
+    <div class="delivery-tabs">
+        <div class="categories">
+            <ul>
+                <li v-for="(tab, index) in tabs" :class="{'active': tab.active}" :key="index">
+                    <span @click="switchTab(tab.slug)">{{ tab.name }}</span>
+                </li>
+            </ul>
+        </div>
+        <slot />
+    </div>
+</template>
+
+<script>
+    import { mapActions, mapGetters } from "vuex"
+
+    export default {
+        data() {
+            return {
+                tabs: []
+            }
+        },
+        computed: {
+            ...mapGetters('events', {
+                count: "getPopularCount",
+                categories: 'getCategories',
+                limit: 'getLimit'
+            }),
+        },
+        methods: {
+            ...mapActions('events', [
+                "loadLimitedPopularEvents"
+            ]),
+            findTab(slug) {
+                return this.tabs.find((tab) => {
+                    return tab.slug === slug
+                })
+            },
+            switchTab(slug) {
+                const selectedTab = this.findTab(slug);
+
+                if (typeof selectedTab === 'undefined') {
+                    return
+                }
+
+                this.tabs.forEach((tab) => {
+                    tab.active = (tab.slug === selectedTab.slug)
+                })
+            }
+        },
+        created() {
+            this.tabs = this.$children
+        },
+        mounted() {
+            this.switchTab(this.tabs[0].slug)
+        }
+    }
+</script>
+
+<style lang="scss">
+    @import '../../../assets/styles/_media.scss';
+    @import "../../../assets/styles/variables";
+
+    .categories {
+        position: relative;
+        display: block;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+
+            li {
+                position: relative;
+                display: inline-block;
+                margin: 0 10px 10px 0;
+
+                &.active {
+                    span {
+                        content: "";
+                        border: 1px solid $bg-color-1;
+                        background-color: $bg-color-1;
+                        color: $color-1;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                span {
+                    display: block;
+                    color: $color-3;
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: -0.5px;
+                    user-select: none;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 10px 15px;
+                    box-sizing: border-box;
+                    border: 1px solid black;
+                    border-radius: 50px;
+                    line-height: 100%;
+                }
+
+                @include media(sm) {
+                    margin: 0 20px 20px 0;
+
+                    span {
+                        font-size: 16px;
+                        padding: 10px 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .delivery-tabs {
+        position: relative;
+        display: block;
+        margin: 15px;
+
+        @include media(sm) {
+            margin: 50px;
+        }
+    }
+
+    .category {
+
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            position: relative;
+
+            @include media(md) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include media(lg) {
+                 grid-template-columns: repeat(3, 1fr);
+             }
+            @include media(xxl) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            &__item {
+                text-align: left;
+                border-radius: 15px;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+                box-sizing: border-box;
+                background: #ffffff;
+                border: 1px solid #fbfbfb;
+                transition: all .4s ease;
+                padding: 10px;
+
+                &:hover {
+                    -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+                    -moz-box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                }
+
+                .product-thumb {
+                    position: relative;
+                    display: block;
+                    max-height: none !important;
+                    margin-bottom: 0;
+                    overflow: hidden;
+                    transform: translateZ(0);
+                    border-radius: 10px 10px 0 0;
+                }
+
+                .product-text {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    min-height: 60px;
+                    padding: 0;
+
+                    &__title {
+                        font-family: 'PT Serif', serif;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 110%;
+                        padding: 6px 0;
+                    }
+                }
+            }
+
+        }
+    }
+</style>

@@ -1,0 +1,21 @@
+@import "../_media.scss";
+
+.base-layout {
+	width: 100%;
+
+	@include media(sm) {
+		width: 560px;
+	}
+	@include media(md) {
+		width: 750px;
+	}
+	@include media(lg) {
+		width: 920px;
+	}
+	@include media(xl) {
+		width: 1140px;
+	}
+	@include media(xxl) {
+		width: 1500px;
+	}
+}

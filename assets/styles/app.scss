@@ -1,81 +1,45 @@
 @charset "utf-8";
 
-@import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/functions";
 @import "~bulma/sass/utilities/_all.sass";
 
 @import "variables";
+@import "components/base-layout";
 
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
 }
 
-html {
-  font-size: 16px;
-  overflow: hidden;
+.bounce-enter-active {
+  animation: bounce-in .8s;
+}
+.bounce-leave-active {
+  animation: bounce-out .5s;
+}
+@keyframes bounce-in {
+  0% { transform: scale(0) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(0) }
 }
 
-body {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  box-sizing: border-box;
-  overflow: hidden;
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
 }
-
-
-
-
-.header {
-  position: relative;
-  height: 100vh;
-  background-image: linear-gradient(
-                  to bottom,
-                  rgba(0,0,0,0.95) 0%,
-                  rgba(0,0,0,0.6) 25%,
-                  rgba(0,0,0,0) 100%),
-  url(../images/header/background-1.png);
-  -webkit-filter: contrast(1.1) brightness(1.4);
-  filter: contrast(1.1) brightness(1.4);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: top 0;
-}
-
-.header__reserve {
-  text-align: center;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  right:  50%;
-  max-width: 450px;
-  width: 80%;
-  height: 60px;
-  transform: translateX(50%);
-  background: #7a980b;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header__reserve::after {
-  content: "";
-  position: absolute;
-  height: 50px;
-  width: 200px;
-  background: $backgroung-ormanent no-repeat bottom;
-  display: inline-block;
-  transform: translateX(50%);
-  top: -50px;
-  right: 50%;
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
 }
 
 // General colors
@@ -84,33 +48,12 @@ $background: $white-ter !default
 $border: $grey-lighter !default
 $border-hover: $grey-light !default
 
-// Set your brand colors
-$blue: #282b32;
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$transparent: transparent;
-
-// Update Bulma's global variables
-$family-sans-serif: 'IBM Plex Sans', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
-$navbar-link: white;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
 // Update some of Bulma's component variables
 $body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-
-@import './components/navbar';
 
 
 // Import only what you need from Bulma
@@ -130,6 +73,31 @@ $input-shadow: none;
 
 .columns:last-child {
   margin-bottom: 0;
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
 }
 
 h6,
@@ -172,6 +140,10 @@ h1 {
   font-size: $size-1;
 }
 
+.spacer {
+  padding: 10px 0;
+}
+
 .the-menu-title-text {
   position: absolute;
   width: 100%;
@@ -204,10 +176,13 @@ h1 {
   background-position: center center;
 }
 
+img.aligncenter {
+  margin: 0 auto;
+}
 
-
-@import "components/TheContacts";
-@import 'components/TheMenuPreview';
-
-@import "general/menu-page.scss";
-@import "general/img.scss";
+.boxed-layout img {
+  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

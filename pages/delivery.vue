@@ -1,6 +1,9 @@
 <template>
     <div>
-
+        <TheNavigation />
+        <TheDeliveryHeader />
+        <TheDeliveryContent :data="deliveryData" />
+        <TheFooter />
     </div>
 </template>
 
@@ -8,14 +11,15 @@
     export default {
         data() {
             return {
-
+                deliveryData: []
             }
         },
-        methods: {
+        async asyncData({app}) {
+            let response = await app.$axios.get('/kitchen')
 
-        },
-        mounted() {
-
+            return {
+                deliveryData: response.data.data
+            }
         }
     }
 </script>

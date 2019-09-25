@@ -1,32 +1,22 @@
 <template>
     <div>
+        <TheNavigation />
         <div class="container-fluid" style="overflow: hidden">
-            <MenuCategoryCard v-for="category in kitchen[0].children" :key="category.id" :category="category"></MenuCategoryCard>
+            <KitchenCategoryCard v-for="category in kitchen[0].children" :key="category.id" :category="category" />
         </div>
-        <TheFooter></TheFooter>
+        <TheFooter />
     </div>
 </template>
 
 <script>
-    import MenuCategoryCard from "../components/menu/MenuCategoryCard";
-
     export default {
-        components: {
-            MenuCategoryCard
-        },
         data() {
             return {
                 kitchen: []
             }
         },
-        methods: {
-
-        },
-        mounted() {
-            console.log(this.kitchen)
-        },
         async asyncData({app}) {
-            let response = await app.$axios.get('/menu?scope=kitchen')
+            let response = await app.$axios.get('/kitchen')
 
             return {
                 kitchen: response.data.data

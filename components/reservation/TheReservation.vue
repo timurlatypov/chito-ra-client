@@ -1,27 +1,45 @@
 <template>
     <div class="reserve">
-        <div class="reserve--item-1">1</div>
-        <div class="reserve--item-2">
-            <div class="reserve--item__block">
-                2
-            </div>
-            <div class="reserve--item-2__bottom-ornament"></div>
+        <div class="item-1">
+            <img src="@/assets/images/khinkali.png" alt="">
+            <h4>Кухня</h4>
         </div>
-        <div class="reserve--item-3">3</div>
+        <div class="item-2">
+            <div class="item-2__inner">
+                <p class="">Зарезервировать стол легче простого, просто позвоните нам!</p>
+                <h3>+7 (499) 444-74-74</h3>
+                <TheButton className="btn-primary">Позвонить</TheButton>
+            </div>
+        </div>
+        <div class="item-3">
+            <img src="@/assets/images/grills.png" alt="">
+            <h4>Бар</h4>
+        </div>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import "../../assets/styles/variables";
+    @import '../../assets/styles/_media.scss';
 
     .reserve {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        align-items: center;
+        justify-items: center;
         position: relative;
         background-color: #f5f3f0;
         min-height: 450px;
-        display: flex;
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+
+        @include media(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @include media(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     .reserve:after {
@@ -35,63 +53,55 @@
         right: 50%;
     }
 
-    .reserve--item-1 {
+    .item-1 {
         text-align: center;
         order: 1;
+        img {
+            width: 220px;
+        }
     }
-    .reserve--item-2 {
-        order: 0;
-        max-width: 450px;
-        width: 80%;
+    .item-2 {
+        order: 2;
         height: 500px;
         position: relative;
-    }
-    .reserve--item-3 {
         text-align: center;
-        order: 2;
-    }
 
-    .reserve--item__block {
-        position: relative;
+        &__inner {
+            position: relative;
+            text-align: center;
+            background-color: white;
+            width: 450px;
+            height: 300px;
+            margin: 0 auto;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 25px;
+
+            p {
+                margin: 10px 0;
+            }
+
+            h3 {
+                margin: 20px 0 30px 0;
+            }
+        }
+
+        &__inner:after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 200px;
+            background: $backgroung-ormanent-white no-repeat bottom;
+            transform: translateX(50%) rotate(180deg);
+            bottom: -50px;
+            right: 50%;
+        }
+    }
+    .item-3 {
+        order: 3;
         text-align: center;
-        background-color: white;
-        width: 100%;
-        height: 300px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .reserve--item__block:after {
-        content: "";
-        position: absolute;
-        height: 50px;
-        width: 200px;
-        background: $backgroung-ormanent-white no-repeat bottom;
-        transform: translateX(50%) rotate(180deg);
-        bottom: -50px;
-        right: 50%;
-    }
-
-    @media (min-width: 1088px) {
-        .reserve {
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-        .reserve--item-1 {
-            order: 0;
-            align-self: flex-end;
-            width: 30vw;
-        }
-        .reserve--item-2 {
-            order: 1;
-            height: 500px;
-
-        }
-        .reserve--item-3 {
-            order: 2;
-            align-self: flex-end;
-            width: 30vw;
+        img {
+            width: 220px;
         }
     }
 </style>

@@ -1,7 +1,11 @@
 <template>
-    <div>
-
-    </div>
+    <section>
+        <TheNavigation />
+        <TheAboutHeader />
+        <!--<TheAboutContent />-->
+        <!--<TheContacts />-->
+        <TheFooter />
+    </section>
 </template>
 
 <script>
@@ -10,12 +14,6 @@
             return {
 
             }
-        },
-        methods: {
-
-        },
-        mounted() {
-
         }
     }
 </script>

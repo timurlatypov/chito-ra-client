@@ -1,6 +1,5 @@
 <template>
   <div>
-    <TheNavigation />
     <nuxt/>
     <TheMenuCardModal></TheMenuCardModal>
   </div>

@@ -6,23 +6,16 @@
                     <img :src="`http://api.test/${params.images[0].name}`" alt="">
                 </p>
             </div>
-            <!--<pre>{{ params }}</pre>-->
-            <button class="c-btn c-btn--success" @click.prevent="$modal.hide('menu-card')">Ок</button>
+            <div class="description">
+                {{ params.description }}
+            </div>
         </template>
     </TheModal>
 </template>
 
 <script>
-    import TheModal from '@/components/globals/TheModal'
-
     export default {
-        components: {
-            TheModal
-        },
-        data() {
-            return {
 
-            }
-        },
     }
 </script>
+

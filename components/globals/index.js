@@ -1,1 +1,5 @@
 export { default as TheAlert } from './TheAlert'
+export { default as TheButton } from './TheButton'
+export { default as TheModal } from './TheModal'
+export { default as TheTab } from './TheTab'
+export { default as TheDeliveryTabs } from './tabs/TheDeliveryTabs'
