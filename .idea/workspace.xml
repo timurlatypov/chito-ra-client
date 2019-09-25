@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1922a6-abdb-410a-9454-cf835e1e2d30" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/components/delivery/cards/TheItemCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/delivery/cards/TheItemCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KitchenCategoryCard.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KitchenCategoryCard.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="20" column="70" lean-forward="true" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="78" />
+            <state relative-caret-position="183">
+              <caret line="8" column="131" selection-start-line="8" selection-start-column="131" selection-end-line="8" selection-end-column="131" />
               <folding>
                 <element signature="n#style#0;n#!!top" />
               </folding>
@@ -51,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TheMenuCardModal.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TheMenuCardModal.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="106" lean-forward="true" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="106" />
+            <state relative-caret-position="483">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KitchenCategoryItem.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryItem.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -134,9 +141,9 @@
         <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/components/delivery/TheDeliveryContent.vue" />
-        <option value="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue" />
         <option value="$PROJECT_DIR$/components/delivery/cards/TheItemCard.vue" />
         <option value="$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue" />
+        <option value="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue" />
       </list>
     </option>
   </component>
@@ -234,6 +241,25 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="globals" type="462c0819:PsiDirectoryNode" />
               <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chito-ra-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chito-ra-client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chito-ra-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chito-ra-client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="kitchen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chito-ra-client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chito-ra-client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chito-ra-client" type="b2602c69:ProjectViewProjectNode" />
@@ -466,11 +492,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569427275455</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="WIP">
+      <created>1569428382594</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1569428382595</updated>
+    </task>
+    <task id="LOCAL-00017" summary="WIP">
+      <created>1569428399335</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1569428399335</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276670000" />
+    <option name="totallyTimeSpent" value="276871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -482,7 +522,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36129034" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.43870968" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5344418" visible="true" weight="0.2008547" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -642,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -853,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="20" column="70" lean-forward="true" selection-start-line="20" selection-start-column="70" selection-end-line="20" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/delivery/cards/TheItemCard.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -872,8 +895,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="106" lean-forward="true" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="106" />
+        <state relative-caret-position="483">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="8" column="131" selection-start-line="8" selection-start-column="131" selection-end-line="8" selection-end-column="131" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
