@@ -2,8 +2,8 @@
     <div class="reserve">
         <div class="item-1">
             <img src="@/assets/images/khinkali.png" alt="">
-            <h4>Кухня</h4>
-            <TheButton className="btn-primary">Перейти в Кухню</TheButton>
+            <br>
+            <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Посмотреть меню</nuxt-link>
         </div>
         <div class="item-2">
             <div class="item-2__inner">
@@ -13,9 +13,9 @@
             </div>
         </div>
         <div class="item-3">
-            <img src="@/assets/images/grills.png" alt="">
-            <h4>Бар</h4>
-            <TheButton className="btn-primary">Перейти в Бар</TheButton>
+            <img src="@/assets/images/svg/wine.svg" alt="">
+            <br>
+            <TheButton className="btn-primary">Посмотреть бар</TheButton>
         </div>
     </div>
 </template>
@@ -102,8 +102,11 @@
     .item-3 {
         order: 3;
         text-align: center;
+        svg {
+            fill: red;
+        }
         img {
-            width: 220px;
+            width: 150px;
         }
     }
 </style>

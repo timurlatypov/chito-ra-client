@@ -28,7 +28,7 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
     @import '../../assets/styles/_media.scss';
     @import "../../assets/styles/variables";
 
