@@ -16,7 +16,7 @@ module.exports = {
         prod: {
             user: "root",
             host: "194.58.120.209",
-            key: "~/.ssh/id_rsa_gitlab",
+            key: "~/.ssh/id_rsa_chitora",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/client/prod/",
@@ -25,7 +25,7 @@ module.exports = {
         dev : {
             user: "root",
             host: "194.58.120.209",
-            key: "~/.ssh/id_rsa_gitlab",
+            key: "~/.ssh/id_rsa_chitora",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/client/dev/",
