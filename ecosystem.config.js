@@ -19,7 +19,7 @@ module.exports = {
             key: "~/.ssh/id_rsa_gitlab",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
-            path: "/home/safeuser/var/www/client/prod/",
+            path: "/var/www/client/prod/",
             "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js"
         },
         dev : {
@@ -28,7 +28,7 @@ module.exports = {
             key: "~/.ssh/id_rsa_gitlab",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
-            path: "/home/safeuser/var/www/client/dev/",
+            path: "/var/www/client/dev/",
             "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js"
         }
     }
