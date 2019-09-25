@@ -6,7 +6,7 @@
                  :key="index"
                  :style="`
                     background-color: #f5f3f0;
-                    background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 100%), url(http://apidev.new-chito-ra.site/${image.name});
+                    background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 100%), url(http://apidev.new-chito-ra.site/storage/${image.name});
                     background-position: left center;
                     background-repeat: no-repeat;
                     background-size: calc(100vw/2);
