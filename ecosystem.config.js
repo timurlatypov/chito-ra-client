@@ -14,7 +14,7 @@ module.exports = {
     ],
     deploy: {
         production: {
-            user: "safeuser",
+            user: "root",
             host: "194.58.120.209",
             key: "~/.ssh/id_rsa_gitlab",
             ref: "origin/master",
@@ -23,7 +23,7 @@ module.exports = {
             "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js"
         },
         staging : {
-            user: "safeuser",
+            user: "root",
             host: "194.58.120.209",
             key: "~/.ssh/id_rsa_gitlab",
             ref: "origin/master",
