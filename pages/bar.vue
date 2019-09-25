@@ -57,7 +57,7 @@
             left: 0;
             height: 100%;
             background-color: #f5f3f0;
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 100%), url(http://api.test/category/bar-1.jpg);
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 25%, rgba(0,0,0,0) 100%), url(http://apidev.new-chito-ra.site/category/bar-1.jpg);
             background-position: left center;
             background-repeat: no-repeat;
             background-size: cover;

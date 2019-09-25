@@ -5,7 +5,7 @@
             <div class="base-layout">
                 <div class="centered">
                     <div class="centered__inner">
-                        <TheDeliveryTabs>
+                        <TheDeliveryTabs>/
                             <TheTab v-for="(category, index) in data[0].children" :key="index" :products="category.products" :name="category.name" :slug="category.slug" />
                         </TheDeliveryTabs>
                     </div>
