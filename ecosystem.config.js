@@ -13,7 +13,7 @@ module.exports = {
         }
     ],
     deploy: {
-        production: {
+        prod: {
             user: "root",
             host: "194.58.120.209",
             key: "~/.ssh/id_rsa_gitlab",
@@ -22,7 +22,7 @@ module.exports = {
             path: "/var/www/client/prod/",
             "post-deploy": "npm install && pm2 startOrRestart ecosystem.config.js"
         },
-        staging : {
+        dev : {
             user: "root",
             host: "194.58.120.209",
             key: "~/.ssh/id_rsa_gitlab",
