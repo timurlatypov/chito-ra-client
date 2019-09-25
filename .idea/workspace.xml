@@ -1,89 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d1922a6-abdb-410a-9454-cf835e1e2d30" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/about/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/contacts/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/delivery/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/grills.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/header/background-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/header/background-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/header/background-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/khinkali.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/svg/map-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/components/base-layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/about/TheAboutContent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/about/TheAboutHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/about/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/contacts/TheContactsContent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/contacts/TheContactsHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/contacts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/delivery/TheDeliveryContent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/delivery/TheDeliveryHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/delivery/cards/TheItemCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/delivery/cards/TheItemCardVariations.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/delivery/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer/TheSocialList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer/TheSubscribeForm.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/general/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/globals/TheButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/globals/TheTab.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/globals/tabs/TheDeliveryTabs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/headers/TheHeader.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menu/bar/BarCategoryCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menu/bar/BarCategoryItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menu/bar/BarCategoryItemVariation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menu/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/reservation/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/AppSign.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/VueAgile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/VueParallax.js" afterDir="false" />
+    <list default="true" id="9d1922a6-abdb-410a-9454-cf835e1e2d30" name="Default" comment="WIP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/header/background-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/header/background-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/TheContacts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/TheMenuPreview.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/general/img.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/general/menu-page.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contacts/TheContacts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/contacts/TheContacts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contacts/page/ContactsHeader.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contacts/page/ContactsMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contacts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/footer/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer/TheFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheGreeting.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheGreeting.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/TheGreeting.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheHistory.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheHistory.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/TheHistory.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheMenuTitle.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/general/TheMenuTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/general/TheMenuTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globals/TheModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/globals/TheModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globals/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globals/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/globals/modals/TheMenuCardModal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/TheHeader.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/headers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menu/MenuCategoryCard.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menu/MenuCategoryItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menu/MenuCategoryItemVariation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/menu/kitchen/KitchenCategoryItemVariation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/menu/TheMenuPreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/menu/TheMenuPreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/navbar/TheNavigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/navbar/TheNavigation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/reservation/TheReservation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/reservation/TheReservation.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/shared/AppLogoSign.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/AppLogoSign.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/about.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/delivery.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/delivery.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/kitchen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/kitchen.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/VueModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/VueModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecosystem.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ecosystem.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+            <state relative-caret-position="326">
+              <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecosystem.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ecosystem.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -128,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/components/contacts/page/ContactsMain.vue" />
         <option value="$PROJECT_DIR$/components/menu/TheMenuPreview.vue" />
         <option value="$PROJECT_DIR$/layouts/default.vue" />
         <option value="$PROJECT_DIR$/assets/styles/components/navbar.scss" />
@@ -179,6 +107,7 @@
         <option value="$PROJECT_DIR$/components/general/TheMenuTitle.vue" />
         <option value="$PROJECT_DIR$/components/contacts/TheContactsContent.vue" />
         <option value="$PROJECT_DIR$/components/contacts/TheContactsHeader.vue" />
+        <option value="$PROJECT_DIR$/ecosystem.config.js" />
       </list>
     </option>
   </component>
@@ -344,12 +273,34 @@
       <workItem from="1569087475384" duration="2228000" />
       <workItem from="1569165335720" duration="25312000" />
       <workItem from="1569264825297" duration="3135000" />
-      <workItem from="1569351110296" duration="445000" />
+      <workItem from="1569351110296" duration="1203000" />
     </task>
+    <task id="LOCAL-00001" summary="WIP">
+      <created>1569396018480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569396018481</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP">
+      <created>1569399370210</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569399370210</updated>
+    </task>
+    <task id="LOCAL-00003" summary="WIP">
+      <created>1569400438952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569400438952</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272128000" />
+    <option name="totallyTimeSpent" value="272886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="23" width="1575" height="1027" extended-state="0" />
@@ -361,8 +312,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36344087" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5344418" visible="true" weight="0.21461187" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.16774194" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5344418" visible="true" weight="0.21461187" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.4655582" side_tool="true" weight="0.17918676" />
@@ -383,19 +334,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/bulma/sass/elements/container.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/delivery/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -428,6 +378,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="184" column="31" lean-forward="true" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
+          <folding>
+            <element signature="e#1651#3156#0" />
+            <element signature="e#2496#2752#0" />
+            <element signature="e#6896#7109#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -495,6 +450,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="n#script#0;n#!!top" />
+            <element signature="e#1106#1601#0" />
+            <element signature="e#1615#1752#0" />
+            <element signature="e#1766#2604#0" />
+            <element signature="e#2620#2757#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -518,6 +480,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="n#style#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -539,6 +504,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+          <folding>
+            <element signature="n#script#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -574,6 +542,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="175" column="34" lean-forward="true" selection-start-line="171" selection-start-column="7" selection-end-line="175" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#nav#0;n#template#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#nav#0;n#template#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,8 +683,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nuxt.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+        <state relative-caret-position="326">
+          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="34" column="2" lean-forward="true" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
         </state>
       </provider>
     </entry>
