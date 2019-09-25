@@ -3,7 +3,7 @@
         <template slot="body" slot-scope="{ params }">
             <div class="modal-content">
                 <p class="image is-16by9">
-                    <img :src="`http://apidev.new-chito-ra.site/${params.images[0].name}`" alt="">
+                    <img :src="`http://apidev.new-chito-ra.site/storage/${params.images[0].name}`" alt="">
                 </p>
             </div>
             <div class="description">

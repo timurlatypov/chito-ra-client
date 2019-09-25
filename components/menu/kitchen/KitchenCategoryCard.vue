@@ -18,7 +18,7 @@
                     <div class="cr-blank-space" style="height:130px"></div>
                     <div class="row">
                         <div class="has-text-centered">
-                            <img src="http://apidev.new-chito-ra.site/sketches/cold-snacks.png" width="200px">
+                            <img src="http://apidev.new-chito-ra.site/storage/sketches/cold-snacks.png" width="200px">
                         </div>
                     </div>
                     <div class="sep-text">
