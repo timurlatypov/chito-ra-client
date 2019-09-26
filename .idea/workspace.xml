@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1922a6-abdb-410a-9454-cf835e1e2d30" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/bar/background-1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/contacts/TheContactsContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/contacts/TheContactsContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/footer/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer/TheFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/bar.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +56,8 @@
       <file leaf-file-name="TheContactsHeader.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/contacts/TheContactsHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="402">
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -419,7 +415,7 @@
       <workItem from="1569264825297" duration="3135000" />
       <workItem from="1569351110296" duration="1381000" />
       <workItem from="1569445290284" duration="1728000" />
-      <workItem from="1569471046695" duration="1641000" />
+      <workItem from="1569471046695" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="WIP">
       <created>1569396018480</created>
@@ -582,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569445967053</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="WIP">
+      <created>1569473186964</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1569473186964</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285938000" />
+    <option name="totallyTimeSpent" value="286088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="319" y="23" width="1320" height="1022" extended-state="0" />
@@ -598,8 +601,8 @@
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22486487" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5344418" visible="true" weight="0.2511737" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3783784" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5344418" visible="true" weight="0.2511737" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.4655582" side_tool="true" weight="0.17918676" />
@@ -973,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/contacts/TheContactsHeader.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="402">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
         </state>
       </provider>
     </entry>
