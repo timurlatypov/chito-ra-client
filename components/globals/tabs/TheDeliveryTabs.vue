@@ -190,6 +190,7 @@
                     &__title {
                         font-family: 'PT Serif', serif;
                         font-size: 20px;
+                        color: $color-3;
                         font-weight: 700;
                         line-height: 110%;
                         padding: 6px 0;
