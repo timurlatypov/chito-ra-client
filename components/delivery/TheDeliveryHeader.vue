@@ -60,7 +60,7 @@
         }
 
         @include media(sm) {
-            height: 500px;
+            height: 600px;
 
             &__title {
                 font-size: 46px;

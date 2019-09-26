@@ -64,8 +64,6 @@
             }
         }
 
-
-
         .wrapper {
             position: absolute;
             text-align: center;

@@ -64,12 +64,15 @@
     .categories {
         position: relative;
         display: block;
+        max-width: 1000px;
+        margin: 0 auto;
 
         ul {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             list-style: none;
+            justify-content: center;
             margin: 0;
             padding: 0;
 

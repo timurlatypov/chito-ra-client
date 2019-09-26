@@ -122,11 +122,12 @@
              left: 50%;
              border-radius: 4px;
              transform: translate(-50%, -50%);
-             background-color: #fff;
+             //background-color: #fff;
              width: 90%;
              max-width: 800px;
              z-index: 100;
          }
+
     }
 
 
