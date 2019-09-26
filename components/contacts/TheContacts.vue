@@ -1,25 +1,65 @@
 <template>
     <div class="contacts">
-        <div class="contacts__wrapper">
-            <div class="contacts__item--1">
-                <div class="contacts__anchor active">«Чито-ра» на Казакова</div>
-                <div class="contacts__anchor">«Чито-ра» на Лесной</div>
-                <div class="contacts__anchor">«Чито-ра» на Сущевском Валу</div>
+        <!--<div class="contacts__wrapper">-->
+            <!--<div class="contacts__item&#45;&#45;1">-->
+                <!--<div class="contacts__anchor active">«Чито-ра» на Казакова</div>-->
+                <!--<div class="contacts__anchor">«Чито-ра» на Лесной</div>-->
+                <!--<div class="contacts__anchor">«Чито-ра» на Сущевском Валу</div>-->
+            <!--</div>-->
+            <!--<div class="contacts__item&#45;&#45;2">-->
+                <!--<div class="contacts__item__block">-->
+                    <!--<div class="img-wrapper">-->
+                        <!--<img src="@/assets/images/svg/map-icon.svg" alt="">-->
+                    <!--</div>-->
+                    <!--<h4 class="white">Как найти</h4>-->
+                    <!--<div class="content-text">-->
+                        <!--Москва, ул. Казакова, д. 10-->
+                    <!--</div>-->
+                    <!--<TheButton>Показать на карте</TheButton>-->
+                <!--</div>-->
+                <!--<div class="contacts__item&#45;&#45;2__bottom-ornament"></div>-->
+            <!--</div>-->
+            <!--<div class="contacts__item&#45;&#45;3"></div>-->
+        <!--</div>-->
+        <div class="centered__inner">
+            <div class="phone">
+                <div class="phone__title">Адреса</div>
             </div>
-            <div class="contacts__item--2">
-                <div class="contacts__item__block">
-                    <div class="img-wrapper">
-                        <img src="@/assets/images/svg/map-icon.svg" alt="">
-                    </div>
-                    <h4 class="white">Как найти</h4>
-                    <div class="content-text">
-                        Москва, ул. Казакова, д. 10
-                    </div>
-                    <TheButton>Показать на карте</TheButton>
+            <div class="addresses">
+                <div>
+                    <h4>«Чито-ра»<br>на Казакова</h4>
+                    <div class="spacer"></div>
+                    <div class="addresses__subtitle">адрес</div>
+                    <div class="addresses__text">Казакова ул., д.10</div>
+                    <div class="spacer"></div>
+                    <div class="addresses__text">Ежедневно</div>
+                    <div class="addresses__text">12:00 - 23:00</div>
+                    <br>
+                    <TheButton class="btn-primary">Карта проезда</TheButton>
                 </div>
-                <div class="contacts__item--2__bottom-ornament"></div>
+                <div>
+                    <h4>«Чито-ра»<br>на Сущевском Валу</h4>
+                    <div class="spacer"></div>
+                    <div class="addresses__subtitle">адрес</div>
+                    <div class="addresses__text">Сущевский вал, д.14б</div>
+                    <div class="spacer"></div>
+                    <div class="addresses__text">Ежедневно</div>
+                    <div class="addresses__text">12:00 - 23:00</div>
+                    <br>
+                    <TheButton class="btn-primary">Карта проезда</TheButton>
+                </div>
+                <div>
+                    <h4>«Чито-ра»<br>на Лесной</h4>
+                    <div class="spacer"></div>
+                    <div class="addresses__subtitle">адрес</div>
+                    <div class="addresses__text">Лесная ул., д.30</div>
+                    <div class="spacer"></div>
+                    <div class="addresses__text">Ежедневно</div>
+                    <div class="addresses__text">12:00 - 23:00</div>
+                    <br>
+                    <TheButton class="btn-primary">Карта проезда</TheButton>
+                </div>
             </div>
-            <div class="contacts__item--3"></div>
         </div>
     </div>
 </template>
@@ -31,11 +71,11 @@
     .contacts {
         background-color: white;
         background-image: url(../../assets/images/contacts/contacts-background-view.png);
-        background-position: bottom;
-        background-size: contain;
+        background-position: center bottom;
+        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 900px;
+        height: 800px;
 
         &__anchor {
             position: relative;
@@ -155,6 +195,65 @@
                 margin-bottom: 30px;
             }
         }
+    }
 
+
+
+
+
+
+
+
+
+    .addresses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        align-items: stretch;
+        text-align: center;
+        padding: 50px 50px;
+
+        @include media(sm) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include media(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 10px;
+            letter-spacing: 0.04rem;
+            color: grey;
+            text-transform: uppercase;
+        }
+
+        &__text {
+            font-family: 'PT Serif', serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: $color-3;
+        }
+    }
+
+    .phone {
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        text-align: center;
+        color: $color-3;
+        padding-top: 30px;
+
+        &__title {
+            font-size: 36px;
+            line-height: 110%;
+            padding: 15px 0 0 0;
+        }
+
+        &__number {
+            font-size: 26px;
+            padding: 10px 0;
+        }
     }
 </style>

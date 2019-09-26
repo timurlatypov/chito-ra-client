@@ -144,38 +144,6 @@ h1 {
   padding: 10px 0;
 }
 
-.the-menu-title-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.image-parallax {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  background-image: linear-gradient(
-                  to bottom,
-                  rgba(0,0,0,0.7) 0%,
-                  rgba(0,0,0,0.4) 25%,
-                  rgba(0,0,0,0.2) 50%,
-                  rgba(0,0,0,0.4) 75%,
-                  rgba(0,0,0,0.7) 100%),
-  url(../images/menu-title/the-menu-title-background.png);
-  -webkit-filter: contrast(1.1) brightness(1.2);
-  filter: contrast(1.1) brightness(1.2);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-}
-
 img.aligncenter {
   margin: 0 auto;
 }

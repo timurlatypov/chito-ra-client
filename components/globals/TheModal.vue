@@ -67,7 +67,7 @@
 
 <style lang="scss">
     .app-modal {
-        background-color: rgba(0,0,0, 0.9);
+        background-color: rgba(0,0,0, 0.85);
         position: fixed;
         width: 100%;
         height: 100%;

@@ -3,10 +3,10 @@
     <TheNavigation />
     <TheHeader />
     <TheReservation />
-    <TheAboutHeader />
     <TheGreeting />
     <TheMenuTitle />
     <TheHistory />
+    <TheMenuTitle />
     <TheContacts />
     <TheFooter />
   </div>

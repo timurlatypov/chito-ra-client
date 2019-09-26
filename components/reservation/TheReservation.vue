@@ -3,6 +3,7 @@
         <div class="item-1">
             <img src="@/assets/images/khinkali.png" alt="">
             <br>
+            <br>
             <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Посмотреть меню</nuxt-link>
         </div>
         <div class="item-2">
@@ -14,6 +15,7 @@
         </div>
         <div class="item-3">
             <img src="@/assets/images/svg/wine.svg" alt="">
+            <br>
             <br>
             <TheButton className="btn-primary">Посмотреть бар</TheButton>
         </div>

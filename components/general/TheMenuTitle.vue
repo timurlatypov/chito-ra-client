@@ -3,8 +3,7 @@
         <div class="the-menu-title-text"><h1 class="white">Доставка</h1></div>
         <no-ssr>
             <parallax :fixed="true">
-                <div class="image-parallax">
-                </div>
+                <div class="image-parallax"></div>
             </parallax>
         </no-ssr>
     </div>
@@ -19,10 +18,42 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .the-menu-title {
         position: relative;
     }
+    .the-menu-title-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .image-parallax {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.7) 0%,
+                        rgba(0,0,0,0.4) 25%,
+                        rgba(0,0,0,0.2) 50%,
+                        rgba(0,0,0,0.4) 75%,
+                        rgba(0,0,0,0.7) 100%),
+        url(../../assets/images/delivery/background.jpg);
+        -webkit-filter: contrast(1.1) brightness(1.2);
+        filter: contrast(1.1) brightness(1.2);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+
 
     .the-menu-title::before {
         content: "";

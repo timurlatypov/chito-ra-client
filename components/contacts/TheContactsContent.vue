@@ -5,7 +5,6 @@
             <div class="base-layout">
                 <div class="centered">
                     <div class="centered__inner">
-
                         <div class="phone">
                             <div class="phone__title">+7 (495) 444-74-74</div>
                         </div>
@@ -177,6 +176,7 @@
             font-family: 'PT Serif', serif;
             font-size: 18px;
             font-weight: 700;
+            color: $color-3;
         }
     }
 
