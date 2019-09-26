@@ -39,7 +39,7 @@
 	.footer {
 		background-color: #282b32;
 		min-height: 300px;
-		padding: 3rem 0;
+		padding: 6rem 0 0 0;
 
 		#{&}__chito-ra-sign {
 			width: 50px;

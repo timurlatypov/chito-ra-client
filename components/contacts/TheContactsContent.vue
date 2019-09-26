@@ -6,7 +6,9 @@
                 <div class="centered">
                     <div class="centered__inner">
 
-                        <div class="contacts-blocks__title">Наши адреса</div>
+                        <div class="phone">
+                            <div class="phone__title">+7 (495) 444-74-74</div>
+                        </div>
                         <div class="addresses">
                             <div>
                                 <h4>«Чито-ра»<br>на Казакова</h4>
@@ -16,6 +18,8 @@
                                 <div class="spacer"></div>
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
+                                <br>
+                                <TheButton class="btn-primary">Карта проезда</TheButton>
                             </div>
                             <div>
                                 <h4>«Чито-ра»<br>на Сущевском Валу</h4>
@@ -25,6 +29,8 @@
                                 <div class="spacer"></div>
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
+                                <br>
+                                <TheButton class="btn-primary">Карта проезда</TheButton>
                             </div>
                             <div>
                                 <h4>«Чито-ра»<br>на Лесной</h4>
@@ -34,11 +40,9 @@
                                 <div class="spacer"></div>
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
+                                <br>
+                                <TheButton class="btn-primary">Карта проезда</TheButton>
                             </div>
-                        </div>
-
-                        <div class="phone">
-                            <div class="phone__title">+7 (495) 444-74-74</div>
                         </div>
                     </div>
                 </div>
@@ -81,7 +85,7 @@
 
         @include media(sm) {
             grid-template-columns: repeat(3, 1fr);
-            padding: 0;
+            padding-bottom: 0;
         }
         @include media(md) {
             grid-template-columns: repeat(3, 1fr);
@@ -181,12 +185,12 @@
         font-weight: 700;
         text-align: center;
         color: $color-3;
-        padding-bottom: 30px;
+        padding-top: 30px;
 
         &__title {
             font-size: 36px;
             line-height: 110%;
-            padding: 10px 0 20px 0;
+            padding: 15px 0 0 0;
         }
 
         &__number {
