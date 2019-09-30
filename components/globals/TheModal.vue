@@ -25,11 +25,9 @@
         methods:{
             setVisible() {
                 this.visible = true
-                document.body.classList.add('overflow-hidden')
             },
             setHidden() {
                 this.visible = false
-                document.body.classList.remove('overflow-hidden')
             }
         },
         beforeMount () {
@@ -127,8 +125,5 @@
              max-width: 800px;
              z-index: 100;
          }
-
     }
-
-
 </style>

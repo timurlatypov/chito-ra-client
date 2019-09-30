@@ -17,17 +17,6 @@
                 required: true,
                 type: String
             }
-        },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
         }
     }
 </script>

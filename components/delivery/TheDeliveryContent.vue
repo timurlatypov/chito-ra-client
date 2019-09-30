@@ -24,17 +24,6 @@
                 type: Array
             }
         },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-            console.log(this.data)
-        }
     }
 </script>
 

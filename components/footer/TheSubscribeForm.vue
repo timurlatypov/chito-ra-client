@@ -43,7 +43,7 @@
     }
 
     .field {
-        width: 385px;
+        width: 320px;
         height: 50px;
         position: relative;
         input {

@@ -36,14 +36,7 @@
                     show: true
                 }
             }
-        },
-        computed: {
-            ...mapGetters([
-
-            ]),
-
-        },
-
+        }
     }
 </script>
 

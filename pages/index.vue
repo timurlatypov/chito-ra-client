@@ -2,11 +2,13 @@
   <div>
     <TheNavigation />
     <TheHeader />
-    <TheReservation />
-    <TheGreeting />
-    <TheMenuTitle />
+    <TheReservationBlock />
+    <TheAboutUs />
+    <TheAboutUsImage />
     <TheHistory />
-    <TheMenuTitle />
+    <TheDeliveryImage />
+    <TheDeliveryPreview  :data="deliveryData" />
+    <TheContactsImage />
     <TheContacts />
     <TheFooter />
   </div>
@@ -20,6 +22,18 @@
               meta: [
                   { hid: 'description', name: 'description', content: '' }
               ]
+          }
+      },
+      data() {
+          return {
+              deliveryData: []
+          }
+      },
+      async asyncData({app}) {
+          let response = await app.$axios.get('/kitchen')
+
+          return {
+              deliveryData: response.data.data
           }
       }
   }

@@ -1,6 +1,6 @@
 <template>
-    <div class="greeting">
-        <div class="greeting__content">
+    <div class="about-us">
+        <div class="about-us__content">
             <h3>О нас</h3>
             Приходите к нам и заказывайте домашнюю грузинскую еду для себя, для друзей, свадьбы,
             корпоратива, детского праздника. Слепим для вас сколько угодно хинкали или зажарим сочный шашлык – хоть одну порцию, хоть несколько тысяч!
@@ -21,10 +21,13 @@
 </script>
 
 <style lang="scss">
-    .greeting {
+    @import "../../assets/styles/variables";
+    @import "../../assets/styles/_media.scss";
+
+    .about-us {
         position: relative;
         width: 100%;
-        height: 400px;
+        padding: 30px 0 50px 0;
         display: flex;
         justify-items: center;
         align-items: center;
@@ -40,7 +43,6 @@
             top: 30px;
             right: 50%;
         }
-
         &:after {
             content: "";
             position: absolute;
@@ -52,11 +54,19 @@
             right: 50%;
         }
 
-        #{&}__content {
+        @include media(sm) {
+
+        }
+
+        &__content {
             position: relative;
-            width: 60%;
+            width: 80%;
             margin: 50px auto;
             text-align: center;
+
+            @include media(sm) {
+                width: 60%;
+            }
         }
     }
 </style>

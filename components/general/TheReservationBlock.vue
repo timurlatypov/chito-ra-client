@@ -2,9 +2,7 @@
     <div class="reserve">
         <div class="item-1">
             <img src="@/assets/images/khinkali.png" alt="">
-            <br>
-            <br>
-            <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Посмотреть меню</nuxt-link>
+            <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Смотреть Меню</nuxt-link>
         </div>
         <div class="item-2">
             <div class="item-2__inner">
@@ -14,10 +12,8 @@
             </div>
         </div>
         <div class="item-3">
-            <img src="@/assets/images/svg/wine.svg" alt="">
-            <br>
-            <br>
-            <TheButton className="btn-primary">Посмотреть бар</TheButton>
+            <img src="@/assets/images/wine.png" alt="">
+            <nuxt-link :to="{ name: 'bar' }" class="btn btn-primary">Смотреть Бар</nuxt-link>
         </div>
     </div>
 </template>
@@ -38,10 +34,7 @@
         min-height: 450px;
         width: 100%;
 
-        @include media(sm) {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        @include media(md) {
+        @include media(lg) {
             grid-template-columns: repeat(3, 1fr);
         }
     }
@@ -58,35 +51,64 @@
     }
 
     .item-1 {
+        padding: 80px 0 70px 0;
         text-align: center;
-        order: 1;
+        order: 2;
         img {
-            width: 220px;
+            width: 200px;
+            padding-bottom: 10px;
+        }
+
+        @include media(lg) {
+            order: 1;
+            padding: 0;
+
+            img {
+                width: 240px;
+            }
         }
     }
     .item-2 {
-        order: 2;
-        height: 500px;
+        order: 1;
+        height: 100%;
         position: relative;
         text-align: center;
+        align-self: self-start;
+
+        @include media(lg) {
+            order: 2;
+            height: 300px;
+            position: relative;
+            text-align: center;
+        }
 
         &__inner {
             position: relative;
             text-align: center;
             background-color: white;
-            width: 450px;
-            height: 300px;
+            width: 300px;
             margin: 0 auto;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             padding: 25px;
 
+            @include media(sm) {
+                width: 400px;
+            }
+
             p {
                 margin: 10px 0;
+                line-height: 110%;
             }
 
             h3 {
-                margin: 20px 0 30px 0;
+                margin: 10px 0 10px 0;
+                font-size: 1.5rem;
+
+                @include media(sm) {
+                    font-size: 2rem;
+                    margin: 20px 0 30px 0;
+                }
             }
         }
 
@@ -102,13 +124,20 @@
         }
     }
     .item-3 {
-        order: 3;
+        padding: 10px 0 70px 0;
         text-align: center;
-        svg {
-            fill: red;
-        }
+        order: 3;
         img {
             width: 150px;
+            padding-bottom: 10px;
+        }
+
+        @include media(lg) {
+            order: 3;
+
+            img {
+                width: 180px;
+            }
         }
     }
 </style>

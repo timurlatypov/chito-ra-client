@@ -1,26 +1,5 @@
 <template>
     <div class="contacts">
-        <!--<div class="contacts__wrapper">-->
-            <!--<div class="contacts__item&#45;&#45;1">-->
-                <!--<div class="contacts__anchor active">«Чито-ра» на Казакова</div>-->
-                <!--<div class="contacts__anchor">«Чито-ра» на Лесной</div>-->
-                <!--<div class="contacts__anchor">«Чито-ра» на Сущевском Валу</div>-->
-            <!--</div>-->
-            <!--<div class="contacts__item&#45;&#45;2">-->
-                <!--<div class="contacts__item__block">-->
-                    <!--<div class="img-wrapper">-->
-                        <!--<img src="@/assets/images/svg/map-icon.svg" alt="">-->
-                    <!--</div>-->
-                    <!--<h4 class="white">Как найти</h4>-->
-                    <!--<div class="content-text">-->
-                        <!--Москва, ул. Казакова, д. 10-->
-                    <!--</div>-->
-                    <!--<TheButton>Показать на карте</TheButton>-->
-                <!--</div>-->
-                <!--<div class="contacts__item&#45;&#45;2__bottom-ornament"></div>-->
-            <!--</div>-->
-            <!--<div class="contacts__item&#45;&#45;3"></div>-->
-        <!--</div>-->
         <div class="centered__inner">
             <div class="phone">
                 <div class="phone__title">Адреса</div>
@@ -34,8 +13,6 @@
                     <div class="spacer"></div>
                     <div class="addresses__text">Ежедневно</div>
                     <div class="addresses__text">12:00 - 23:00</div>
-                    <br>
-                    <TheButton class="btn-primary">Карта проезда</TheButton>
                 </div>
                 <div>
                     <h4>«Чито-ра»<br>на Сущевском Валу</h4>
@@ -45,8 +22,6 @@
                     <div class="spacer"></div>
                     <div class="addresses__text">Ежедневно</div>
                     <div class="addresses__text">12:00 - 23:00</div>
-                    <br>
-                    <TheButton class="btn-primary">Карта проезда</TheButton>
                 </div>
                 <div>
                     <h4>«Чито-ра»<br>на Лесной</h4>
@@ -56,8 +31,6 @@
                     <div class="spacer"></div>
                     <div class="addresses__text">Ежедневно</div>
                     <div class="addresses__text">12:00 - 23:00</div>
-                    <br>
-                    <TheButton class="btn-primary">Карта проезда</TheButton>
                 </div>
             </div>
         </div>
@@ -75,7 +48,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 800px;
+        min-height: 800px;
 
         &__anchor {
             position: relative;

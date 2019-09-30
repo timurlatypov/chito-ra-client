@@ -1,12 +1,11 @@
 <template>
         <div class="wrapper">
-            <div class="cr-blank-space" style="height:130px"></div>
+            <div class="cr-blank-space" style="height:80px"></div>
             <div class="sep-text">
                 <h3 class="has-text-centered">
                     {{ category.name }}
                 </h3>
             </div>
-
             <template v-if="category.products">
                 <BarCategoryItem v-for="(product, index) in category.products" :key="index" :product="product"></BarCategoryItem>
             </template>
@@ -20,41 +19,46 @@
               required: true,
               type: Object
           }
-        },
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
         }
     }
 </script>
 
 <style lang="scss">
+    @import "../../../assets/styles/variables";
+    @import "../../../assets/styles/_media.scss";
 
     .wrapper {
-        padding: 0 40px;
+        padding: 0 20px;
+
+        @include media(lg) {
+            padding: 0 40px;
+        }
     }
 
+
     .menu-title {
-        padding: 10px 0 20px 0;
+        padding: 5px 10px 15px 10px;
+
+        @include media(sm) {
+            padding: 10px 0 20px 0;
+        }
 
         h6, h5 {
             position: relative;
             margin-bottom: 2px;
             padding-top: 0;
-            transition: all .3s;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Graphik LCG', sans-serif;
             font-weight: 700;
             letter-spacing: 0.04rem;
             text-transform: uppercase;
-        }
+            transition: all .3s;
+            font-size: 14px;
 
+            @include media(sm) {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
         h5:before,
         h6:before {
             display: block;
@@ -70,6 +74,7 @@
             position: absolute;
         }
 
+
         .fp_price {
             background: transparent;
             position: absolute;
@@ -80,15 +85,24 @@
             font-weight: normal;
             padding: 0;
             color: #000;
+            font-size: 13px;
+
+            @include media(sm) {
+                font-size: 16px;
+            }
         }
 
         & .item-description {
             color: #70747d;
-            font-size: .85em;
+            font-size: 12px;
             font-style: italic;
+            line-height: 100%;
+
+            @include media(sm) {
+                font-size: 16px;
+                line-height: 120%;
+            }
         }
-
-
     }
 
     .sep-text {

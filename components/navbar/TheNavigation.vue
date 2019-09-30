@@ -171,7 +171,7 @@
     .navbar-item {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.1rem;
         letter-spacing: 0.04rem;
         text-transform: uppercase;
     }

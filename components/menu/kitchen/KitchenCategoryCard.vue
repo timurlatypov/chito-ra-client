@@ -47,17 +47,30 @@
 </script>
 
 <style lang="scss">
+    @import "../../../assets/styles/variables";
+    @import "../../../assets/styles/_media.scss";
+
     .menu-page {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 0;
         grid-row-gap: 0;
 
+        @include media(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
         &__left {
-            min-height: 1000px;
+            display: none;
+            position: relative;
+            min-height: 800px;
             border-bottom: 5px solid #f5f5f0;
+
+            @include media(lg) {
+                display: block;
+            }
         }
+
         &__right {
             min-height: 1000px;
             background-color: #f5f3f0;
@@ -65,23 +78,36 @@
     }
 
     .wrapper {
-        padding: 0 40px;
+        padding: 0 20px;
+
+        @include media(lg) {
+            padding: 0 40px;
+        }
     }
 
     .menu-title {
-        padding: 10px 0 20px 0;
+        padding: 5px 10px 15px 10px;
+
+        @include media(sm) {
+            padding: 10px 0 20px 0;
+        }
 
         h6, h5 {
             position: relative;
             margin-bottom: 2px;
             padding-top: 0;
-            transition: all .3s;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Graphik LCG', sans-serif;
             font-weight: 700;
             letter-spacing: 0.04rem;
             text-transform: uppercase;
-        }
+            transition: all .3s;
+            font-size: 14px;
 
+            @include media(sm) {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
         h5:before,
         h6:before {
             display: block;

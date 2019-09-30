@@ -1,6 +1,6 @@
 <template>
     <div>
-        <TheNavigation />
+        <TheNavigation/>
         <div class="container-fluid" style="overflow: hidden">
             <div class="row">
                 <div class="bar-page">
@@ -8,27 +8,30 @@
                     <div class="bar-page__left">
                         <div class="bar-page__background">
                             <no-ssr>
-                                    <agile navButtons="false" speed="1000" pauseOnHover="false" autoplay="true" autoplaySpeed="15000" dots="false" fade="true" infinite="true">
-                                        <div class="slide">
-                                            <div class="slide-1 full-height">
-                                                <div class="slide-text"></div>
-                                            </div>
-                                        </div>
-                                        <div class="slide"><div class="slide-2 full-height">
+                                <agile navButtons="false" speed="1000" pauseOnHover="false" autoplay="true"
+                                       autoplaySpeed="15000" dots="false" fade="true" infinite="true">
+                                    <div class="slide">
+                                        <div class="slide-1 full-height">
                                             <div class="slide-text"></div>
-                                        </div></div>
-                                    </agile>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="slide-2 full-height">
+                                            <div class="slide-text"></div>
+                                        </div>
+                                    </div>
+                                </agile>
                             </no-ssr>
                         </div>
                     </div>
 
                     <div class="bar-page__right">
-                        <BarCategoryCard v-for="category in bar[0].children" :key="category.id" :category="category" />
+                        <BarCategoryCard v-for="category in bar[0].children" :key="category.id" :category="category"/>
                     </div>
                 </div>
             </div>
         </div>
-        <TheFooter />
+        <TheFooter/>
     </div>
 </template>
 
@@ -39,9 +42,7 @@
                 bar: []
             }
         },
-        methods: {
-
-        },
+        methods: {},
         mounted() {
 
         },
@@ -56,12 +57,17 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "../assets/styles/variables";
+    @import "../assets/styles/_media.scss";
+
     .slide {
         width: 100%;
     }
+
     .full-height {
         height: 100vh;
     }
+
     .slide-1 {
         position: relative;
         filter: contrast(1.1);
@@ -70,6 +76,7 @@
         background-size: cover;
         background-position: left top;
     }
+
     .slide-2 {
         position: relative;
         filter: contrast(1.1);
@@ -95,12 +102,25 @@
 
     .bar-page {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 0;
         grid-row-gap: 0;
 
+        @include media(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         &__left {
+            display: none;
             position: relative;
+
+            @include media(md) {
+                display: block;
+            }
+        }
+
+        &__right {
+            background-color: #f5f3f0;
         }
 
         &__background {
@@ -115,10 +135,5 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        &__right {
-            background-color: #f5f3f0;
-        }
-
     }
 </style>

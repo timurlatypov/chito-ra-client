@@ -2,7 +2,7 @@
     <header class="header">
         <no-ssr>
             <div class="header__carousel">
-                <agile navButtons="false" speed="1000" pauseOnHover="false" autoplay="true" autoplaySpeed="7000" dots="false" fade="true" infinite="true">
+                <agile :navButtons=false :speed=1000 :pauseOnHover=false :autoplay=true :autoplaySpeed=7000 :dots=false :fade=true :infinite=true >
                     <div class="slide">
                         <div class="slide-1 full-height">
                             <div class="slide-text">Вкусно. Сытно.<br>По-домашнему.</div>
@@ -45,14 +45,28 @@
         position: absolute;
         font-family: 'PT Serif', serif;
         font-weight: 700;
-        line-height: 120%;
         text-align: center;
         top: 50%;
         left: 50%;
+        min-width: 310px;
         color: white;
-        font-size: 50px;
         transform: translate3d(-50%, -50%, 0);
         z-index: 11;
+
+        font-size: 30px;
+        line-height: 120%;
+
+        @include media(md) {
+            font-size: 40px;
+            line-height: 120%;
+            min-width: 500px;
+        }
+
+        @include media(lg) {
+            font-size: 50px;
+            line-height: 120%;
+            min-width: 700px;
+        }
     }
 
     .header {
@@ -73,29 +87,45 @@
             color: white;
             bottom: 0;
             right:  50%;
-            width: 450px;
+            width: 300px;
             height: 60px;
             transform: translateX(50%);
-            background: #b2db1a;
+            background: $color-4;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 11;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 50px;
+                width: 200px;
+                background: $backgroung-ormanent no-repeat bottom;
+                display: inline-block;
+                transform: translateX(50%);
+                top: -50px;
+                right: 50%;
+            }
+
+            h4 {
+                font-size: 1.2rem;
+            }
+
+            @include media(sm) {
+                width: 400px;
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+            }
         }
 
-        &__reserve::after {
-            content: "";
-            position: absolute;
-            height: 50px;
-            width: 200px;
-            background: $backgroung-ormanent no-repeat bottom;
-            display: inline-block;
-            transform: translateX(50%);
-            top: -50px;
-            right: 50%;
-        }
+
+
+
     }
 
     .slide {

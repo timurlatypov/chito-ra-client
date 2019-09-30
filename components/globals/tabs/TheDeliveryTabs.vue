@@ -160,7 +160,7 @@
                 z-index: 1;
                 box-sizing: border-box;
                 background: #ffffff;
-                border: 1px solid #fbfbfb;
+                //border: 1px solid #fbfbfb;
                 transition: all .4s ease;
                 padding: 10px;
 

@@ -55,7 +55,8 @@ module.exports = {
     },
 
     axios: {
-        baseURL: 'http://apidev.new-chito-ra.site/api'
+        //baseURL: 'http://apidev.new-chito-ra.site/api'
+        baseURL: 'http://api.test/api'
     },
     css: [
         '~assets/styles/app.scss'
@@ -63,7 +64,6 @@ module.exports = {
     plugins: [
         { src: '@plugins/VueModal'},
         { src: '@plugins/VueAgile', ssr: false },
-        { src: '@plugins/VueParallax', ssr: false },
         { src: '@plugins/index.js' }
     ],
 

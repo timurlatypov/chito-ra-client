@@ -3,6 +3,7 @@
 @import "~bulma/sass/utilities/functions";
 @import "~bulma/sass/utilities/_all.sass";
 
+@import "fonts.scss";
 @import "variables";
 @import "components/base-layout";
 
@@ -86,14 +87,16 @@ $input-shadow: none;
 
 html {
   font-size: 16px;
+  height: 100%;
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Graphik LCG", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .overflow-hidden {
@@ -153,4 +156,56 @@ img.aligncenter {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.bg-about {
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0.95) 0%,
+                  rgba(0, 0, 0, 0.4) 25%,
+                  rgba(0, 0, 0, 0.3) 50%,
+                  rgba(0, 0, 0, 0.4) 75%,
+                  rgba(0, 0, 0, 0.95) 100%),
+                  url('../images/contacts/background.png');
+  -webkit-filter: contrast(1.1) brightness(1.2);
+  filter: contrast(1.1) brightness(1.2);
+  -webkit-background-size: cover;
+  background-size: contain;
+  background-position: center center;
+}
+
+.bg-delivery {
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0.95) 0%,
+                  rgba(0, 0, 0, 0.4) 25%,
+                  rgba(0, 0, 0, 0.3) 50%,
+                  rgba(0, 0, 0, 0.4) 75%,
+                  rgba(0, 0, 0, 0.95) 100%),
+                  url('../images/delivery/background.jpg');
+  -webkit-filter: contrast(1.1) brightness(1.2);
+  filter: contrast(1.1) brightness(1.2);
+  -webkit-background-size: cover;
+  background-size: contain;
+  background-position: center center;
+}
+
+.bg-contacts {
+  background-image: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0.95) 0%,
+                  rgba(0, 0, 0, 0.4) 25%,
+                  rgba(0, 0, 0, 0.3) 50%,
+                  rgba(0, 0, 0, 0.4) 75%,
+                  rgba(0, 0, 0, 0.95) 100%),
+  url('../images/contacts/background-2.jpg');
+  -webkit-filter: contrast(1.1) brightness(1.2);
+  filter: contrast(1.1) brightness(1.2);
+  -webkit-background-size: cover;
+  background-size: contain;
+  background-position: center center;
+}
+
+.btn {
+  margin: 0 auto;
 }

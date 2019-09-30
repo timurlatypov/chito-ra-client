@@ -41,16 +41,16 @@
 		min-height: 300px;
 		padding: 6rem 0 0 0;
 
-		#{&}__chito-ra-sign {
+		&__chito-ra-sign {
 			width: 50px;
 			margin: 2rem auto 0 auto;
 		}
-		#{&}__chito-ra-logo {
+		&__chito-ra-logo {
 			width: 130px;
 			margin: 1.3rem auto 2rem auto;
 		}
 
-		#{&}__blocks {
+		&__blocks {
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
 			grid-column-gap: 0;

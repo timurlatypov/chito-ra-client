@@ -2,38 +2,20 @@
     <div class="history">
         <div class="history__content">
             <h4>Закажите доставку</h4>
-            <br>
             <TheButton className="btn-primary">Перейти в раздел</TheButton>
         </div>
     </div>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
-
 <style lang="scss">
     .history {
         position: relative;
         width: 100%;
-        height: 400px;
+        min-height: 300px;
         display: flex;
         justify-items: center;
         align-items: center;
         background-color: white;
-
         &:before {
             content: "";
             position: absolute;
@@ -44,7 +26,6 @@
             top: 30px;
             right: 50%;
         }
-
         &:after {
             content: "";
             position: absolute;
@@ -56,7 +37,7 @@
             right: 50%;
         }
 
-        #{&}__content {
+        &__content {
             position: relative;
             width: 60%;
             margin: 50px auto;
