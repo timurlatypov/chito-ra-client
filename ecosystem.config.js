@@ -26,7 +26,7 @@ module.exports = {
             user: "root",
             host: "194.58.120.209",
             key: "~/.ssh/id_rsa_chitora",
-            ref: "origin/master",
+            ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/client/dev/",
             "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js"
