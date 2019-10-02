@@ -6,5 +6,5 @@ export { default as TheAboutUsImage } from './TheAboutUsImage'
 export { default as TheDeliveryImage } from './TheDeliveryImage'
 export { default as TheDeliveryPreview } from './TheDeliveryPreview'
 
-export { default as TheHistory } from './TheHistory'
+export { default as TheOrderDelivery } from './TheOrderDelivery'
 export { default as TheContactsImage } from './TheContactsImage'

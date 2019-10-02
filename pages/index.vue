@@ -3,12 +3,8 @@
     <TheNavigation />
     <TheHeader />
     <TheReservationBlock />
-    <TheAboutUs />
     <TheAboutUsImage />
-    <TheHistory />
-    <TheDeliveryImage />
-    <TheDeliveryPreview  :data="deliveryData" />
-    <TheContactsImage />
+    <TheOrderDelivery />
     <TheContacts />
     <TheFooter />
   </div>

@@ -6,22 +6,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
-
 <style lang="scss" scoped>
     @import "../../assets/styles/variables";
     @import "../../assets/styles/_media.scss";
@@ -48,6 +32,7 @@
             font-size: 30px;
             font-weight: 700;
             min-width: 320px;
+            line-height: 110%;
 
         }
 

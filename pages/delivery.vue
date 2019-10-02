@@ -3,7 +3,7 @@
         <TheNavigation />
         <TheDeliveryHeader />
         <TheDeliveryContent :data="deliveryData" />
-        <TheFooter />
+        <TheFooter className="extra-padding" />
     </div>
 </template>
 

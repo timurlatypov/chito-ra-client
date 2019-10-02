@@ -1,6 +1,6 @@
 <template>
     <div class="register">
-        <h4 class="white">Горячие новости!</h4>
+        <h4 class="white">Оставить отзыв</h4>
         <div class="field">
             <input type="text" maxlength="21" id="register">
             <label for="register"><span>Ваш email</span></label>

@@ -7,6 +7,7 @@
                     <div class="centered__inner">
                         <TheDeliveryTabs>
                             <TheTab v-for="(category, index) in data[0].children" :key="index" :products="category.products" :name="category.name" :slug="category.slug" />
+                            <TheTab :products="payload" name="Напитки" slug="drinks" />
                         </TheDeliveryTabs>
                     </div>
                 </div>
@@ -24,6 +25,564 @@
                 type: Array
             }
         },
+        data() {
+            return {
+                payload: [
+                    {
+                        "id": 133,
+                        "name": "КОКА-КОЛА",
+                        "description": null,
+                        "slug": "koka-kola",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 119,
+                                    "name": "250",
+                                    "price": "120,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 133,
+                                        "name": "КОКА-КОЛА",
+                                        "description": null,
+                                        "slug": "koka-kola",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 134,
+                        "name": "ФАНТА",
+                        "description": null,
+                        "slug": "fanta",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 120,
+                                    "name": "250 мл",
+                                    "price": "120,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 134,
+                                        "name": "ФАНТА",
+                                        "description": null,
+                                        "slug": "fanta",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 135,
+                        "name": "СПРАЙТ",
+                        "description": null,
+                        "slug": "sprite",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 121,
+                                    "name": "250 мл",
+                                    "price": "120,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 135,
+                                        "name": "СПРАЙТ",
+                                        "description": null,
+                                        "slug": "sprite",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 136,
+                        "name": "НАТАХТАРИ ЛИМОНАД",
+                        "description": null,
+                        "slug": "natahtari-limonad",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 122,
+                                    "name": "500 мл",
+                                    "price": "140,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 136,
+                                        "name": "НАТАХТАРИ ЛИМОНАД",
+                                        "description": null,
+                                        "slug": "natahtari-limonad",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 137,
+                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                        "description": null,
+                        "slug": "domashnii-yagodnyi-mors",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 123,
+                                    "name": "300 мл",
+                                    "price": "100,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 137,
+                                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                                        "description": null,
+                                        "slug": "domashnii-yagodnyi-mors",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 138,
+                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                        "description": null,
+                        "slug": "voda-mineralnaya-borzhomi",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 124,
+                                    "name": "500 мл",
+                                    "price": "150,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 138,
+                                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                                        "description": null,
+                                        "slug": "voda-mineralnaya-borzhomi",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 139,
+                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                        "description": null,
+                        "slug": "voda-mineralnaya-sairme",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 125,
+                                    "name": "500 мл",
+                                    "price": "140,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 139,
+                                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                                        "description": null,
+                                        "slug": "voda-mineralnaya-sairme",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 140,
+                        "name": "ШВЕПС ТОНИК",
+                        "description": null,
+                        "slug": "shveps-tonik",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 126,
+                                    "name": "250 мл",
+                                    "price": "150,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 140,
+                                        "name": "ШВЕПС ТОНИК",
+                                        "description": null,
+                                        "slug": "shveps-tonik",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            15
+                        ]
+                    },
+                    {
+                        "id": 141,
+                        "name": "ЯБЛОКО",
+                        "description": null,
+                        "slug": "apple-juice",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 127,
+                                    "name": "1000 мл",
+                                    "price": "375,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 141,
+                                        "name": "ЯБЛОКО",
+                                        "description": null,
+                                        "slug": "apple-juice",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            16
+                        ]
+                    },
+                    {
+                        "id": 142,
+                        "name": "ВИШНЯ",
+                        "description": null,
+                        "slug": "cherry-juice",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 128,
+                                    "name": "1000 мл",
+                                    "price": "375,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 142,
+                                        "name": "ВИШНЯ",
+                                        "description": null,
+                                        "slug": "cherry-juice",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            16
+                        ]
+                    },
+                    {
+                        "id": 143,
+                        "name": "ТОМАТ",
+                        "description": null,
+                        "slug": "tomato-juice",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 129,
+                                    "name": "1000 мл",
+                                    "price": "375,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 143,
+                                        "name": "ТОМАТ",
+                                        "description": null,
+                                        "slug": "tomato-juice",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            16
+                        ]
+                    },
+                    {
+                        "id": 144,
+                        "name": "АПЕЛЬСИН",
+                        "description": null,
+                        "slug": "orange-juice",
+                        "live": false,
+                        "deliverable": true,
+                        "spicy": false,
+                        "top": false,
+                        "price": "0,00 ₽",
+                        "in_stock": false,
+                        "variations": {
+                            "Порция": [
+                                {
+                                    "id": 130,
+                                    "name": "1000 мл",
+                                    "price": "375,00 ₽",
+                                    "price_varies": true,
+                                    "stock_count": 0,
+                                    "type": "Порция",
+                                    "in_stock": false,
+                                    "product": {
+                                        "id": 144,
+                                        "name": "АПЕЛЬСИН",
+                                        "description": null,
+                                        "slug": "orange-juice",
+                                        "live": false,
+                                        "deliverable": true,
+                                        "spicy": false,
+                                        "top": false,
+                                        "price": "0,00 ₽",
+                                        "in_stock": false
+                                    }
+                                }
+                            ]
+                        },
+                        "images": [
+                            {
+                                "name": "images/default.jpg",
+                                "alt": ""
+                            }
+                        ],
+                        "categories": [
+                            16
+                        ]
+                    }
+                ],
+            }
+        }
     }
 </script>
 

@@ -3,7 +3,7 @@
         <TheNavigation />
         <TheContactsHeader />
         <TheContactsContent />
-        <TheFooter />
+        <TheFooter className="extra-padding" />
     </section>
 </template>
 

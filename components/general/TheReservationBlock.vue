@@ -1,7 +1,7 @@
 <template>
     <div class="reserve">
         <div class="item-1">
-            <img src="@/assets/images/khinkali.png" alt="">
+            <div class="reserve__image-container" style="background-image: url('/images/khinkali.png')"></div>
             <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Смотреть Меню</nuxt-link>
         </div>
         <div class="item-2">
@@ -12,7 +12,8 @@
             </div>
         </div>
         <div class="item-3">
-            <img src="@/assets/images/wine.png" alt="">
+            <div class="reserve__image-container" style="background-image: url('/images/wine.png'); background-size: 70%;">
+            </div>
             <nuxt-link :to="{ name: 'bar' }" class="btn btn-primary">Смотреть Бар</nuxt-link>
         </div>
     </div>
@@ -31,29 +32,27 @@
         justify-items: center;
         position: relative;
         background-color: #f5f3f0;
-        min-height: 450px;
+        min-height: 300px;
         width: 100%;
 
         @include media(lg) {
             grid-template-columns: repeat(3, 1fr);
         }
-    }
 
-    .reserve:after {
-        content: "";
-        position: absolute;
-        height: 50px;
-        width: 200px;
-        background: $backgroung-ormanent-white no-repeat bottom;
-        transform: translateX(50%);
-        bottom: 0;
-        right: 50%;
+        &__image-container {
+            width: 200px;
+            height: 145px;
+            margin-bottom: 20px;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 
     .item-1 {
-        padding: 80px 0 70px 0;
         text-align: center;
         order: 2;
+        padding-bottom: 30px;
         img {
             width: 200px;
             padding-bottom: 10px;
@@ -90,7 +89,7 @@
             margin: 0 auto;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            padding: 25px;
+            padding: 15px 25px;
 
             @include media(sm) {
                 width: 400px;
@@ -102,7 +101,7 @@
             }
 
             h3 {
-                margin: 10px 0 10px 0;
+                margin: 5px 0 5px 0;
                 font-size: 1.5rem;
 
                 @include media(sm) {
@@ -124,9 +123,10 @@
         }
     }
     .item-3 {
-        padding: 10px 0 70px 0;
         text-align: center;
         order: 3;
+        padding-bottom: 30px;
+
         img {
             width: 150px;
             padding-bottom: 10px;
@@ -136,7 +136,7 @@
             order: 3;
 
             img {
-                width: 180px;
+                width: 150px;
             }
         }
     }

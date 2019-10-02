@@ -2,9 +2,8 @@
     <section>
         <TheNavigation />
         <TheAboutHeader />
-        <!--<TheAboutContent />-->
-        <!--<TheContacts />-->
-        <TheFooter />
+        <TheAboutContent />
+        <TheFooter className="extra-padding" />
     </section>
 </template>
 

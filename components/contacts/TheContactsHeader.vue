@@ -33,8 +33,9 @@
                         to bottom,
                         rgba(0,0,0,0.95) 0%,
                         rgba(0,0,0,0.6) 25%,
-                        rgba(0,0,0,0) 100%), url('../../assets/images/contacts/background.png');
+                        rgba(0,0,0,0) 85%), url('../../assets/images/contacts/background.png');
         background-size:cover;
+        filter: contrast(1.2);
         color: white;
 
         &__title {

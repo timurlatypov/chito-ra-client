@@ -154,8 +154,8 @@
         background: #fff;
         min-height: 150px;
         margin-top: 80px;
-        border-bottom: 1px solid black;
-        color: black;
+        border-bottom: 1px solid $color-3;
+        color: $color-3;
         padding: 20px;
         font-family: 'Montserrat', sans-serif;
         font-size: 20px;
@@ -241,18 +241,18 @@
         }
 
         &.navbar--scrolled {
-            background-color: white;
+            background-color: #f5f3f0;
             box-shadow: 0 2px 24px rgba(100, 100, 100, .5);
 
             .navbar-brand svg {
-                fill: #000;
+                fill: $color-3;
             }
 
             a.navbar-item,
             a.navbar-item span,
             span.navbar-link,
             .navbar-burger {
-                color: black;
+                color: $color-3;
 
                 &:hover {
                     color: #cb7152;
