@@ -92,9 +92,14 @@
             margin: 0 auto;
 
             &__inner {
+                padding: 20px;
                 p {
                     text-align: justify;
                     padding: 0 0 40px 0;
+                }
+
+                @include media(sm) {
+                    padding: 50px;
                 }
             }
         }
