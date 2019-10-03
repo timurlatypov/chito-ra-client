@@ -36,7 +36,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .travel-map {
-    height: 400px;
-  }
+  /*.travel-map {*/
+    /*height: 400px;*/
+  /*}*/
 </style>
