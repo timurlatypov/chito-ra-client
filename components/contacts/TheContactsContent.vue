@@ -9,7 +9,7 @@
                             <div class="phone__title">+7 (495) 444-74-74</div>
                         </div>
                         <div class="addresses">
-                            <div>
+                            <div class="addresses__item">
                                 <h4>«Чито-ра»<br>на Казакова</h4>
                                 <div class="spacer"></div>
                                 <div class="addresses__subtitle">адрес</div>
@@ -20,7 +20,7 @@
                                 <br>
                                 <TheButton class="btn-primary">Карта проезда</TheButton>
                             </div>
-                            <div>
+                            <div class="addresses__item">
                                 <h4>«Чито-ра»<br>на Сущевском Валу</h4>
                                 <div class="spacer"></div>
                                 <div class="addresses__subtitle">адрес</div>
@@ -31,7 +31,7 @@
                                 <br>
                                 <TheButton class="btn-primary">Карта проезда</TheButton>
                             </div>
-                            <div>
+                            <div class="addresses__item">
                                 <h4>«Чито-ра»<br>на Лесной</h4>
                                 <div class="spacer"></div>
                                 <div class="addresses__subtitle">адрес</div>
@@ -178,6 +178,9 @@
             font-weight: 700;
             color: $color-3;
         }
+        &__item {
+            padding-bottom: 35px;
+        }
     }
 
     .phone {
@@ -188,9 +191,16 @@
         padding-top: 30px;
 
         &__title {
-            font-size: 36px;
+            font-size: 26px;
             line-height: 110%;
             padding: 15px 0 0 0;
+
+            @include media(sm) {
+                font-size: 20px;
+            }
+            @include media(md) {
+                font-size: 36px;
+            }
         }
 
         &__number {

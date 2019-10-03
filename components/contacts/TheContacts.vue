@@ -5,7 +5,7 @@
                 <div class="phone__title">Адреса</div>
             </div>
             <div class="addresses">
-                <div>
+                <div class="addresses__item">
                     <h4>«Чито-ра»<br>на Казакова</h4>
                     <div class="spacer"></div>
                     <div class="addresses__subtitle">адрес</div>
@@ -14,7 +14,7 @@
                     <div class="addresses__text">Ежедневно</div>
                     <div class="addresses__text">12:00 - 23:00</div>
                 </div>
-                <div>
+                <div class="addresses__item">
                     <h4>«Чито-ра»<br>на Сущевском Валу</h4>
                     <div class="spacer"></div>
                     <div class="addresses__subtitle">адрес</div>
@@ -23,7 +23,7 @@
                     <div class="addresses__text">Ежедневно</div>
                     <div class="addresses__text">12:00 - 23:00</div>
                 </div>
-                <div>
+                <div class="addresses__item">
                     <h4>«Чито-ра»<br>на Лесной</h4>
                     <div class="spacer"></div>
                     <div class="addresses__subtitle">адрес</div>
@@ -224,6 +224,10 @@
             font-weight: 700;
             color: $color-3;
         }
+
+        &__item {
+            padding-bottom: 35px;
+        }
     }
 
     .phone {
@@ -240,8 +244,15 @@
         }
 
         &__number {
-            font-size: 26px;
+            font-size: 18px;
             padding: 10px 0;
+        }
+
+        @include media(sm) {
+            font-size: 26px;
+        }
+        @include media(md) {
+
         }
     }
 </style>

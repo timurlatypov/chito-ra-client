@@ -52,21 +52,21 @@
     .item-1 {
         text-align: center;
         order: 2;
+        padding-bottom: 30px;
 
         img {
             width: 200px;
             padding-bottom: 10px;
         }
-
         @include media(lg) {
             order: 1;
-            padding: 0;
 
             img {
                 width: 240px;
             }
         }
     }
+
     .item-2 {
         order: 1;
         height: 100%;
@@ -125,6 +125,8 @@
     .item-3 {
         text-align: center;
         order: 3;
+        padding-bottom: 30px;
+
         img {
             width: 150px;
             padding-bottom: 10px;

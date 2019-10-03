@@ -50,7 +50,7 @@
             text-align: center;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-column-gap: 20px;
+            grid-column-gap: 50px;
             grid-row-gap: 20px;
 
             @include media(md) {

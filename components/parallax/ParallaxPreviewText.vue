@@ -12,7 +12,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: white;
         font-family: 'PT Serif', serif;
         font-weight: 700;
