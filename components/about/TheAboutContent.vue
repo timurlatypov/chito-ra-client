@@ -65,6 +65,7 @@
         text-align: center;
         border-radius: 25px;
         padding: 50px 0;
+        min-width: 70vw;
 
         &::after {
             content: '';
@@ -88,7 +89,6 @@
         }
 
         .centered {
-            width: 60%;
             margin: 0 auto;
 
             &__inner {
