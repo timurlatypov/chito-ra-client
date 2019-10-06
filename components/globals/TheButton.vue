@@ -33,7 +33,6 @@
     @import "../../assets/styles/variables";
 
     .btn {
-        display: block;
         padding: 10px 20px;
         font: $family-sans-serif;
         font-weight: 700;

@@ -18,7 +18,7 @@
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
                                 <br>
-                                <TheButton class="btn-primary">Карта проезда</TheButton>
+                                <TheButton class="btn-primary" @click.native="$modal.show('kazakova-map')">Карта проезда</TheButton>
                             </div>
                             <div class="addresses__item">
                                 <h4>«Чито-ра»<br>на Сущевском Валу</h4>
@@ -29,7 +29,7 @@
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
                                 <br>
-                                <TheButton class="btn-primary">Карта проезда</TheButton>
+                                <TheButton class="btn-primary" @click.native="$modal.show('sushevka-map')">Карта проезда</TheButton>
                             </div>
                             <div class="addresses__item">
                                 <h4>«Чито-ра»<br>на Лесной</h4>
@@ -40,7 +40,7 @@
                                 <div class="addresses__text">Ежедневно</div>
                                 <div class="addresses__text">12:00 - 23:00</div>
                                 <br>
-                                <TheButton class="btn-primary">Карта проезда</TheButton>
+                                <TheButton class="btn-primary" @click.native="$modal.show('lesnaya-map')">Карта проезда</TheButton>
                             </div>
                         </div>
                     </div>
@@ -50,22 +50,6 @@
         <div class="item-3"></div>
     </div>
 </template>
-
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
 
 <style lang="scss" scoped>
     @import "../../assets/styles/variables";

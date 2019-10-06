@@ -16,11 +16,12 @@
     "@nuxtjs/auth": "^4.8.4",
     "@nuxtjs/axios": "^5.6.0",
     "bulma": "^0.7.5",
+    "google-maps-api-loader": "^1.1.1",
     "nuxt": "^2.10.0",
+    "nuxt-gmaps": "^1.0.4",
     "query-string": "^6.8.3",
     "vue-agile": "^1.0.11",
-    "vue-displacement-slideshow": "^2.2.0",
-    "vue-parallaxy": "^1.1.1"
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

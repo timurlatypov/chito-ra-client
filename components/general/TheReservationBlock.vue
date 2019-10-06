@@ -8,7 +8,7 @@
             <div class="item-2__inner">
                 <p class="">Зарезервировать стол легче простого, просто позвоните нам!</p>
                 <a href="tel:74994447474"><h3>+7 (499) 444-74-74</h3></a>
-                <TheButton className="btn-primary">Позвонить</TheButton>
+                <a href="tel:74994447474" class="btn btn-primary">Позвонить</a>
             </div>
         </div>
         <div class="item-3">
@@ -89,7 +89,7 @@
             margin: 0 auto;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
-            padding: 15px 25px;
+            padding: 15px 25px 30px 25px;
 
             @include media(sm) {
                 width: 400px;

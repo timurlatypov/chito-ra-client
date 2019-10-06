@@ -21,7 +21,10 @@ module.exports = {
 
     modules: [
         '@nuxtjs/axios',
-        '@nuxtjs/auth'
+        '@nuxtjs/auth',
+        // 'nuxt-gmaps', {
+        //     key: 'AIzaSyC9bjokYg7l44EUU7muQKaszCYuQH8b_5U'
+        // }
     ],
 
     auth: {
@@ -64,7 +67,8 @@ module.exports = {
     plugins: [
         { src: '@plugins/VueModal'},
         { src: '@plugins/VueAgile', ssr: false },
-        { src: '@plugins/index.js' }
+        { src: '@plugins/index.js' },
+        { src: '@plugins/vue2-google-maps.js', ssr: true },
     ],
 
     loading: { color: '#282b32' },
@@ -72,6 +76,7 @@ module.exports = {
     ** Build configuration
     */
     build: {
+        transpile: [/^vue2-google-maps($|\/)/],
         /*
         ** Run ESLint on save
         */
@@ -81,7 +86,7 @@ module.exports = {
                     enforce: 'pre',
                     test: /\.(js|vue)$/,
                     loader: 'eslint-loader',
-                    exclude: /(node_modules)/
+                    exclude: /(node_modules)/,
                 })
             }
         }

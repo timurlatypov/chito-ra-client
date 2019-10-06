@@ -16,14 +16,18 @@
           return {
               title: `Чито-ра - Грузинская кухня и вкуснейшие хинкали`,
               meta: [
-                  { hid: 'description', name: 'description', content: '' }
+                  {
+                      hid: 'description',
+                      name: 'description',
+                      content: ''
+                  }
               ]
           }
       },
       data() {
-          return {
-              deliveryData: []
-          }
+        return {
+
+        }
       },
       async asyncData({app}) {
           let response = await app.$axios.get('/kitchen')

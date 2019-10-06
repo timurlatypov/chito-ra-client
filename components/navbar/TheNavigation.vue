@@ -151,7 +151,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        background: #fff;
+        background: #f5f3f0;
         min-height: 150px;
         margin-top: 80px;
         border-bottom: 1px solid $color-3;
