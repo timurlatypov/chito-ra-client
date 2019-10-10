@@ -11,7 +11,12 @@
 </template>
 
 <script>
+  import Parallax from 'vue-parallaxy'
+
   export default {
+      components: {
+          Parallax
+      },
       head () {
           return {
               title: `Чито-ра - Грузинская кухня и вкуснейшие хинкали`,

@@ -21,6 +21,7 @@
     "nuxt-gmaps": "^1.0.4",
     "query-string": "^6.8.3",
     "vue-agile": "^1.0.11",
+    "vue-parallaxy": "^1.1.1",
     "vue-yandex-maps": "^0.8.17",
     "vue2-google-maps": "^0.10.7",
     "ymaps": "^0.2.1"
