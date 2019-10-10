@@ -131,6 +131,7 @@
              transform: translate(-50%, -50%);
              /*width: 90%;*/
              /*max-width: 800px;*/
+            min-height: 500px;
              z-index: 100;
          }
     }

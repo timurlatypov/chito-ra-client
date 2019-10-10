@@ -65,10 +65,10 @@ module.exports = {
         '~assets/styles/app.scss'
     ],
     plugins: [
+        { src: '@plugins/vue-yandex-maps', ssr: false },
         { src: '@plugins/VueModal'},
         { src: '@plugins/VueAgile', ssr: false },
-        { src: '@plugins/index.js' },
-        { src: '@plugins/vue2-google-maps.js', ssr: true },
+        { src: '@plugins/index.js' }
     ],
 
     loading: { color: '#282b32' },
@@ -76,7 +76,6 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        transpile: [/^vue2-google-maps($|\/)/],
         /*
         ** Run ESLint on save
         */
