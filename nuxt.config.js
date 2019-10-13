@@ -58,8 +58,8 @@ module.exports = {
     },
 
     axios: {
-        //baseURL: 'http://apidev.new-chito-ra.site/api'
-        baseURL: 'http://api.test/api'
+        baseURL: 'http://apidev.new-chito-ra.site/api'
+        //baseURL: 'http://api.test/api'
     },
     css: [
         '~assets/styles/app.scss'
