@@ -2,7 +2,7 @@
     <div class="reserve">
         <div class="item-1">
             <div class="reserve__image-container" style="background-image: url('/images/khinkali.png')"></div>
-            <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Смотреть Меню</nuxt-link>
+            <nuxt-link :to="{ name: 'kitchen' }" class="btn btn-primary">Меню</nuxt-link>
         </div>
         <div class="item-2">
             <div class="item-2__inner">
@@ -14,7 +14,7 @@
         <div class="item-3">
             <div class="reserve__image-container" style="background-image: url('/images/wine.png'); background-size: 70%;">
             </div>
-            <nuxt-link :to="{ name: 'bar' }" class="btn btn-primary">Смотреть Бар</nuxt-link>
+            <nuxt-link :to="{ name: 'bar' }" class="btn btn-primary">Бар</nuxt-link>
         </div>
     </div>
 </template>
