@@ -136,7 +136,6 @@
     }
     .slide-1 {
         position: relative;
-        filter: contrast(1.2);
         background-image: linear-gradient(
                         to bottom,
                         rgba(0,0,0,0.90) 0%,
@@ -145,6 +144,7 @@
                         rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.png');
         background-repeat: no-repeat;
         background-size: cover;
+        filter: contrast(1.2);
     }
     .slide-2 {
         position: relative;

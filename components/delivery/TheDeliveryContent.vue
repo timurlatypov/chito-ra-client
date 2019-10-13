@@ -66,7 +66,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/qWSDdkQ1xVDUOIr1uT4NMq2BKtwqjRMKrUNXsbQV.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -112,7 +112,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/HcFixcU528o3F0OuKwr5vE4GEjdimVj2t9ife9WM.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -158,7 +158,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/W1UczvEXxmqrwffYCZn2KjEMsZunvc6BGosGTnBM.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -204,7 +204,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/guoLxAvMSiHmMJ6yRdBmWcaAJkWJmRGmqWA1xR7S.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -250,7 +250,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/N29b9NDWkRfmKGqcxkDpVxxpfKpOzyGzQRWtZgHi.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -296,7 +296,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/D5era4RbE0jBUusHy3whigt7FOBUtQlRO6i8Czs0.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -342,7 +342,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/zUKpcvVuZ8uPsTIpT3tn77BXTItpnEFV9EZbdbj6.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -388,7 +388,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/2o2cNaYmnBvFTbWUCQie11GADLBqMhZFzO3d56CF.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -398,7 +398,7 @@
                     },
                     {
                         "id": 141,
-                        "name": "ЯБЛОКО",
+                        "name": "Яблочный сок",
                         "description": null,
                         "slug": "apple-juice",
                         "live": false,
@@ -419,7 +419,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 141,
-                                        "name": "ЯБЛОКО",
+                                        "name": "Яблочный сок",
                                         "description": null,
                                         "slug": "apple-juice",
                                         "live": false,
@@ -434,7 +434,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/oFVqx211nfrlxAuu5zxAVHo2QBGxQRNWJ8p2V7S1.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -444,7 +444,7 @@
                     },
                     {
                         "id": 142,
-                        "name": "ВИШНЯ",
+                        "name": "Вишневый сок",
                         "description": null,
                         "slug": "cherry-juice",
                         "live": false,
@@ -465,7 +465,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 142,
-                                        "name": "ВИШНЯ",
+                                        "name": "Вишневый сок",
                                         "description": null,
                                         "slug": "cherry-juice",
                                         "live": false,
@@ -480,7 +480,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/IAZ8SffujMWVyxHQBtM4vFtFszTZW6i3jbEso8xR.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -490,7 +490,7 @@
                     },
                     {
                         "id": 143,
-                        "name": "ТОМАТ",
+                        "name": "Томатный сок",
                         "description": null,
                         "slug": "tomato-juice",
                         "live": false,
@@ -511,7 +511,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 143,
-                                        "name": "ТОМАТ",
+                                        "name": "Томатный сок",
                                         "description": null,
                                         "slug": "tomato-juice",
                                         "live": false,
@@ -526,7 +526,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/7bn8290mSoB72SN7f5b9t3TuZgeAwiyZsUTOPiC1.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -536,7 +536,7 @@
                     },
                     {
                         "id": 144,
-                        "name": "АПЕЛЬСИН",
+                        "name": "Апельсиновый сок",
                         "description": null,
                         "slug": "orange-juice",
                         "live": false,
@@ -557,7 +557,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 144,
-                                        "name": "АПЕЛЬСИН",
+                                        "name": "Апельсиновый сок",
                                         "description": null,
                                         "slug": "orange-juice",
                                         "live": false,
@@ -572,7 +572,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/aRRSh03ufFzY2p2sENTSDHjuOQm6pb7cWhRPlqh4.jpeg",
                                 "alt": ""
                             }
                         ],
