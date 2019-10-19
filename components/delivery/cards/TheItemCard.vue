@@ -22,7 +22,8 @@
                 required: true,
                 type: Object
             }
-        }
+        },
+        data() {}
     }
 </script>
 

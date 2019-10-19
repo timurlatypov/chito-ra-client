@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
     /*
     ** Headers of the page
@@ -22,9 +24,7 @@ module.exports = {
     modules: [
         '@nuxtjs/axios',
         '@nuxtjs/auth',
-        // 'nuxt-gmaps', {
-        //     key: 'AIzaSyC9bjokYg7l44EUU7muQKaszCYuQH8b_5U'
-        // }
+        '@nuxtjs/dotenv',
     ],
 
     auth: {
@@ -59,7 +59,7 @@ module.exports = {
 
     axios: {
         baseURL: 'http://apidev.new-chito-ra.site/api'
-        //baseURL: 'http://api.test/api'
+        //baseURL: process.env.BASE_URL
     },
     css: [
         '~assets/styles/app.scss'

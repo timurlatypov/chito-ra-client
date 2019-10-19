@@ -582,6 +582,10 @@
                     }
                 ],
             }
+        },
+        asyncData (context, {app}) {
+            console.log(context);
+            console.log(app);
         }
     }
 </script>

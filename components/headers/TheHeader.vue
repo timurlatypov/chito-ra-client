@@ -148,13 +148,13 @@
     }
     .slide-2 {
         position: relative;
-        filter: contrast(1.2);
+        filter: contrast(1.1);
         background-image: linear-gradient(
                         to bottom,
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2-new.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -176,7 +176,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-1.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.png');
         background-repeat: no-repeat;
         background-size: cover;
     }

@@ -27,6 +27,7 @@
     "ymaps": "^0.2.1"
   },
   "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
