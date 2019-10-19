@@ -106,7 +106,7 @@
                 background: $backgroung-ormanent no-repeat bottom;
                 display: inline-block;
                 transform: translateX(50%);
-                top: -50px;
+                top: -49px;
                 right: 50%;
             }
 

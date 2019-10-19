@@ -638,7 +638,7 @@
                 width: 200px;
                 background: $backgroung-ormanent-white no-repeat bottom;
                 transform: translateX(50%);
-                top: -50px;
+                top: -49px;
                 right: 50%;
             }
 
@@ -649,7 +649,7 @@
                 width: 200px;
                 background: $backgroung-ormanent-white no-repeat bottom;
                 transform: translateX(50%) rotate(180deg);
-                bottom: -50px;
+                bottom: -49px;
                 right: 50%;
             }
         }

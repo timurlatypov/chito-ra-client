@@ -118,7 +118,7 @@
             width: 200px;
             background: $backgroung-ormanent-white no-repeat bottom;
             transform: translateX(50%) rotate(180deg);
-            bottom: -50px;
+            bottom: -49px;
             right: 50%;
         }
     }
