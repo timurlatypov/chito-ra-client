@@ -45,7 +45,7 @@
             color: $color-3;
             font-size: 36px;
             line-height: 110%;
-            padding: 30px 0;
+            padding: 0 0 50px 0;
         }
     }
 
@@ -94,12 +94,14 @@
             &__inner {
                 padding: 20px;
                 p {
+                    font-size: 18px;
+                    color: $color-3;
                     text-align: justify;
-                    padding: 0 0 40px 0;
+                    padding: 0 0 30px 0;
                 }
 
                 @include media(sm) {
-                    padding: 50px;
+                    padding: 10px 0 20px 0;
                 }
             }
         }
