@@ -1,7 +1,7 @@
 <template>
     <div style="height: 100%;" class="ParallaxImage">
         <client-only>
-            <parallax fixed=true sectionHeight=70>
+            <parallax :fixed=true :sectionHeight=70>
                 <div class="has-background-image"></div>
                 <slot/>
             </parallax>

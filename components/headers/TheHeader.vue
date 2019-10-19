@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <no-ssr>
+        <client-only>
             <div class="header__carousel">
                 <agile :navButtons=false :speed=1000 :pauseOnHover=false :autoplay=true :autoplaySpeed=7000 :dots=false :fade=true :infinite=true >
                     <div class="slide">
@@ -20,7 +20,7 @@
                     </div></div>
                 </agile>
             </div>
-        </no-ssr>
+        </client-only>
         <div class="header__reserve">
             <h4 class="white">Забронировать стол</h4>
         </div>
