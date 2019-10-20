@@ -82,7 +82,7 @@
             @include media(sm) {
                 order: 3;
                 padding: 10px 0;
-                grid-column: 1 / 5;
+                grid-column: 1 / 4;
             }
         }
 
