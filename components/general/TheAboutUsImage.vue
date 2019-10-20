@@ -46,9 +46,12 @@
                             rgba(0,0,0,0.25) 50%,
                             rgba(0,0,0,0.60) 100%), url(../../assets/images/contacts/background.png);
             background-repeat: no-repeat;
-            background-attachment: fixed;
             background-size: cover;
             filter: contrast(1.2);
+
+            @include media(lg) {
+                background-attachment: fixed;
+            }
 
             &:after {
                 content: "Классика и гордость грузинской кухни — хинкали! И мы счастливы быть теми, кто в 2002 году привез культ Хинкальных в Москву!";
@@ -58,14 +61,14 @@
                 transform: translate3d(-50%, -50%, 0);
                 text-align: center;
                 color: white;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 font-family: 'PT Serif', serif;
                 font-weight: 700;
                 line-height: 130%;
                 width: 80%;
 
                 @include media(sm) {
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
                 }
                 @include media(md) {
                     font-size: 2rem;

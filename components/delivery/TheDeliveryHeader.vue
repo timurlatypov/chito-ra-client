@@ -2,7 +2,7 @@
     <div class="delivery-header">
         <div class="wrapper">
             <div class="delivery-header__title">Доставим быстро!</div>
-            <div class="delivery-header__subtitle">+7 (495) 444-74-74</div>
+            <div class="delivery-header__subtitle"><a href="tel:74994447474">+7 (499) 444-74-74</a></div>
         </div>
     </div>
 </template>
