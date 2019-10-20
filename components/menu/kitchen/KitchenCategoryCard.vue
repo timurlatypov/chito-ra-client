@@ -15,13 +15,19 @@
 
             <div class="menu-page__right">
                 <div class="wrapper">
-                    <div style="height:130px"></div>
+                    <div class="spacer"></div>
+                    <div class="row">
+                        <div class="has-text-centered">
+                            <img src="http://apidev.new-chito-ra.site/storage/sketches/cold-snacks.png" width="200px">
+                        </div>
+                    </div>
                     <h3 class="has-text-centered">
                         {{ category.name }}
                     </h3>
                     <template v-if="category.products">
                         <KitchenCategoryItem v-for="(product, index) in category.products" :key="index" :product="product"></KitchenCategoryItem>
                     </template>
+                    <div class="spacer"></div>
                 </div>
             </div>
         </div>
@@ -69,6 +75,13 @@
 
             @include media(lg) {
                 /*min-height: 100vh;*/
+            }
+
+            .spacer {
+                height: 50px;
+                @include media(lg) {
+                    height: 130px;
+                }
             }
         }
     }
