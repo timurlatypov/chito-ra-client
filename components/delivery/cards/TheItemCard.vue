@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="delivery-card">
         <div class="product-thumb" @click.prevent="$modal.show('menu-card', item)">
             <img oncontextmenu="return false;" v-for="(image, index) in item.images" :src="`http://apidev.new-chito-ra.site/storage/${image.name}`" alt="" :key="index">
         </div>
@@ -27,6 +27,9 @@
 </script>
 
 <style lang="scss">
+    .delivery-card {
+        cursor: pointer;
+    }
     h4 {
         line-height: 110%;
     }

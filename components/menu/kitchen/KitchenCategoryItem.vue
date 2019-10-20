@@ -1,6 +1,10 @@
 <template>
-    <div class="kitchen-box">
-        <div class="kitchen-box__title" @click.prevent="$modal.show('menu-card', product)"><h5>{{ product.name }}</h5></div>
+    <div class="kitchen-box" @click.prevent="$modal.show('menu-card', product)">
+        <div class="kitchen-box__title">
+            <h5>{{ product.name }} <span class="icon is-small is-on-hover">
+                <i class="fas fa-camera fa-sm" aria-hidden="true"></i>
+            </span></h5>
+        </div>
         <div class="kitchen-box__prices">
             <template v-if="product.variations">
                 <KitchenCategoryItemVariation v-for="(variations, type) in product.variations" :key="type" :type="type" :variations="variations"></KitchenCategoryItemVariation>
@@ -35,7 +39,30 @@
         align-items: flex-end;
         justify-content: center;
         color: $color-3;
-        padding-bottom: 20px;
+        padding: 10px 20px;
+        transition: all 0.5s ease;
+
+        .is-on-hover {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        & h5 {
+            padding: 4px 0;
+        }
+
+        &:hover {
+            background-color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+            .is-on-hover {
+                opacity: 1;
+            }
+        }
 
         @include media(sm) {
             padding-bottom: 10px;
@@ -79,9 +106,9 @@
             font-style: normal;
             line-height: 120%;
             padding: 4px 0;
+
             @include media(sm) {
                 order: 3;
-                padding: 10px 0;
                 grid-column: 1 / 4;
             }
         }

@@ -77,17 +77,20 @@
             line-height: 120%;
             @include media(sm) {
                 order: 3;
-                grid-column: 1 / 5;
+                grid-column: 1 / 4;
             }
         }
 
 
 
         &__price {
-
+            font-weight: 400;
+            @include media(sm) {
+                font-weight: 700;
+            }
         }
         &__volume {
-            font-weight: 300;
+            font-weight: 400;
         }
     }
 </style>
