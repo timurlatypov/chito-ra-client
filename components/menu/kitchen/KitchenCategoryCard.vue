@@ -56,7 +56,7 @@
         &__left {
             display: none;
             position: relative;
-            min-height: 800px;
+            /*min-height: 800px;*/
             border-bottom: 5px solid #f5f5f0;
 
             @include media(lg) {
@@ -65,8 +65,11 @@
         }
 
         &__right {
-            min-height: 1000px;
             background-color: #f5f3f0;
+
+            @include media(lg) {
+                /*min-height: 100vh;*/
+            }
         }
     }
 
