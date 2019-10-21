@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="item">
-                <TheSubscribeForm/>
+                <TheReviewForm/>
                 <TheSocialList/>
             </div>
             <div class="item center">

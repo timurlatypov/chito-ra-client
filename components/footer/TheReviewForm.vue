@@ -1,25 +1,9 @@
 <template>
     <div class="review">
-        <h4 class="white">Оставить отзыв</h4>
-        <!--<div class="btn btn-primary" @click="$modal.show('review-form')">Написать</div>-->
+        <h4 class="white">Рассказать</h4>
+        <TheButton class="btn--3" @click.native="$modal.show('review-form')">Написать отзыв</TheButton>
     </div>
 </template>
-
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
 
 <style lang="scss" scoped>
 

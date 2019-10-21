@@ -7,22 +7,6 @@
     </div>
 </template>
 
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
-
 <style lang="scss" scoped>
     @import "../../assets/styles/variables";
     @import "../../assets/styles/_media.scss";
