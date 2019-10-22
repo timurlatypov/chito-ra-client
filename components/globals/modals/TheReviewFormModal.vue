@@ -10,10 +10,11 @@
                             <label class="label">О каком ресторане Ваш отзыв?</label>
                             <div class="control">
                                 <div class="select">
-                                    <select>
-                                        <option>«Чито-ра» на Казакова</option>
-                                        <option>«Чито-ра» на Сущевском Валу</option>
-                                        <option>«Чито-ра» на Лесной</option>
+                                    <select v-model="data.restaurant">
+                                        <option value="" disabled>Выберите из списка ...</option>
+                                        <option value="«Чито-ра» на Казакова">«Чито-ра» на Казакова</option>
+                                        <option value="«Чито-ра» на Сущевском Валу">«Чито-ра» на Сущевском Валу</option>
+                                        <option value="«Чито-ра» на Лесной">«Чито-ра» на Лесной</option>
                                     </select>
                                 </div>
                             </div>
@@ -22,20 +23,30 @@
                         <div class="field">
                             <label class="label">Имейл</label>
                             <div class="control">
-                                <input class="input" type="email" placeholder="">
+                                <input class="input" type="email" v-model="data.email" required>
                             </div>
                         </div>
 
                         <div class="field">
                             <label class="label">Отзыв</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder=""></textarea>
+                                <textarea class="textarea" v-model="data.review" required></textarea>
                             </div>
                         </div>
 
-                        <div class="field">
+                        <div class="field" style="padding-top: 10px;">
                             <div class="control">
-                                <TheButton class="btn-primary">Отправить</TheButton>
+                                <TheButton class="btn-primary" :disabled="submitButton.disabled" @click.native="submit">
+                                    <template v-if="submitButton.disabled">
+                                        Отправляем...
+                                    </template>
+                                    <template v-else>
+                                        Отправить
+                                    </template>
+                                </TheButton>
+                            </div>
+                            <div v-if="successMessage.show" style="margin-top: 10px;">
+                                <b>Спасибо, мы получили Ваш отзыв!</b>
                             </div>
                         </div>
                     </form>
@@ -44,6 +55,47 @@
         </template>
     </TheModal>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                data: {
+                    restaurant: null,
+                    email: null,
+                    review: null,
+                },
+                successMessage: {
+                    show: false
+                },
+                submitButton: {
+                    disabled: false
+                }
+            }
+        },
+        methods: {
+            submit() {
+                this.submitButton.disabled = true
+                this.$axios.post('/notifications/review', this.data)
+                    .then((response) => {
+                        this.submitButton.disabled = false
+                        this.successMessage.show = true
+
+                        let clear = () => {
+                            this.data.restaurant = null
+                            this.data.email = null
+                            this.data.review = null
+                            this.successMessage.show = false
+                        }
+
+                        setTimeout(() => {
+                            clear()
+                        }, 10000)
+                    })
+            }
+        }
+    }
+</script>
 
 <style lang="scss">
     @import "../../../assets/styles/variables";
@@ -73,10 +125,3 @@
     }
 
 </style>
-
-<script>
-    import TheButton from "../TheButton";
-    export default {
-        components: {TheButton}
-    }
-</script>

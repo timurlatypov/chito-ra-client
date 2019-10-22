@@ -59,7 +59,7 @@ module.exports = {
 
     axios: {
         baseURL: 'http://apidev.new-chito-ra.site/api'
-        // baseURL: process.env.BASE_URL || 'http://apidev.new-chito-ra.site/api'
+        //baseURL: process.env.BASE_URL
     },
     css: [
         '~assets/styles/app.scss'

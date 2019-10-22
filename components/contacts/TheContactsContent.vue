@@ -6,7 +6,7 @@
                 <div class="centered">
                     <div class="centered__inner">
                         <div class="phone">
-                            <div class="phone__title">+7 (495) 444-74-74</div>
+                            <div class="phone__title">+7 (499) 444-74-74</div>
                         </div>
                         <div class="addresses">
                             <div class="addresses__item">
