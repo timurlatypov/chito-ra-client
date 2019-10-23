@@ -10,7 +10,7 @@
             <div class="item center">
                 <h4 class="white">Позвонить</h4>
                 <div class="text-contacts">
-                    <a class="tel" href="tel:+74997747474">+7 (499) 444-74-74</a>
+                    <a class="tel" href="tel:+74994447474">+7 (499) 444-74-74</a>
                 </div>
             </div>
             <div class="item">

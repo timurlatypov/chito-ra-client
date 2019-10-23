@@ -1,6 +1,6 @@
 <template>
     <div class="review">
-        <h4 class="white">Рассказать</h4>
+        <h4 class="white">Важно ваше мнение!</h4>
         <TheButton class="btn--3" @click.native="$modal.show('review-form')">Написать отзыв</TheButton>
     </div>
 </template>

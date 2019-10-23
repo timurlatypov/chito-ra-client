@@ -42,7 +42,7 @@
                 </template>
             </div>
             <div class="navbar-end">
-                <a class="navbar-item call-us" href="tel:+74997747474">+7 (499) 444-74-74</a>
+                <a class="navbar-item call-us" href="tel:+74994447474">+7 (499) 444-74-74</a>
                 <!--<a class="navbar-item">-->
                     <!--<span class="icon is-cursor-pointer">-->
                         <!--<i class="fas fa-shopping-cart fa-lg"></i>-->

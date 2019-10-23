@@ -3,7 +3,7 @@
         <div class="item-1"></div>
         <div class="item-2">
             <div class="base-layout">
-                <div class="centered">
+                <div class="centered" id="top">
                     <div class="centered__inner">
                         <TheDeliveryTabs>
                             <TheTab v-for="(category, index) in data[0].children" :key="index" :products="category.products" :name="category.name" :slug="category.slug" />

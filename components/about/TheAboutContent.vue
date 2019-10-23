@@ -92,16 +92,20 @@
             margin: 0 auto;
 
             &__inner {
-                padding: 20px;
+                padding: 30px;
                 p {
-                    font-size: 18px;
+                    font-size: 16px;
                     color: $color-3;
                     text-align: justify;
                     padding: 0 0 30px 0;
                 }
 
                 @include media(sm) {
-                    padding: 10px 0 20px 0;
+                    padding: 10px 30px 20px 30px;
+
+                    p {
+                        font-size: 18px;
+                    }
                 }
             }
         }

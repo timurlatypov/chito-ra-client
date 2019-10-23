@@ -38,9 +38,14 @@
 
         &__subtitle {
             font-family: 'PT Serif', serif;
+            color: white;
             font-size: 20px;
             font-weight: 700;
             min-width: 320px;
+
+            a {
+                color: white;
+            }
         }
 
         @include media(sm) {

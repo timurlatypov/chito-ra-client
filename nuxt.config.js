@@ -25,6 +25,19 @@ module.exports = {
         '@nuxtjs/axios',
         '@nuxtjs/auth',
         '@nuxtjs/dotenv',
+        ['vue-scrollto/nuxt', {
+            container: "body",
+            duration: 700,
+            easing: "ease",
+            offset: -120,
+            force: true,
+            cancelable: true,
+            onStart: false,
+            onDone: false,
+            onCancel: false,
+            x: false,
+            y: true
+        }]
     ],
 
     auth: {
