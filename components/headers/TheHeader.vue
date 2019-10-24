@@ -141,7 +141,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
         filter: contrast(1.2);
@@ -165,7 +165,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-3.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-3.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -176,7 +176,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }

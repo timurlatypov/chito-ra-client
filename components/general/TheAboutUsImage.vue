@@ -44,7 +44,7 @@
                             to bottom,
                             rgba(0,0,0,0.60) 0%,
                             rgba(0,0,0,0.25) 50%,
-                            rgba(0,0,0,0.60) 100%), url(../../assets/images/contacts/background.png);
+                            rgba(0,0,0,0.60) 100%), url(../../assets/images/contacts/background.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             filter: contrast(1.2);

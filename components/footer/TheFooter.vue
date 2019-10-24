@@ -18,7 +18,7 @@
                 <TheSocialList/>
             </div>
             <div class="item center">
-                <h4 class="white">Написать</h4>
+                <h4 class="white">Сотрудничество</h4>
                 <div class="text-contacts">
                     <a href="mailto:hello@chito-ra.ru">hello@chito-ra.ru</a>
                 </div>
