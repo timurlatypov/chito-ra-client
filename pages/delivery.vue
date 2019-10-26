@@ -15,7 +15,7 @@
             }
         },
         async asyncData({app}) {
-            let response = await app.$axios.get('/kitchen')
+            let response = await app.$axios.get('/delivery')
 
             return {
                 deliveryData: response.data.data
