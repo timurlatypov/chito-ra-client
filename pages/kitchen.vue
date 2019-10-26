@@ -15,6 +15,11 @@
                 kitchen: []
             }
         },
+        head () {
+            return {
+                title: `Меню ресторана Чито-ра - Грузинская кухня и вкуснейшие хинкали в Москве`,
+            }
+        },
         async asyncData({app}) {
             let response = await app.$axios.get('/kitchen')
 

@@ -14,6 +14,11 @@
                 deliveryData: []
             }
         },
+        head () {
+            return {
+                title: `Доставка Чито-ра - Вкуснейшие хинкали с доставкой на дом`,
+            }
+        },
         async asyncData({app}) {
             let response = await app.$axios.get('/delivery')
 

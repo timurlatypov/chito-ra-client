@@ -11,41 +11,11 @@
 </template>
 
 <script>
-  import Parallax from 'vue-parallaxy'
-
   export default {
-      components: {
-          Parallax
-      },
       head () {
           return {
-              title: `Чито-ра - Грузинская кухня и вкуснейшие хинкали`,
-              meta: [
-                  {
-                      hid: 'description',
-                      name: 'description',
-                      content: ''
-                  }
-              ]
-          }
-      },
-      data() {
-        return {
-
-        }
-      },
-      async asyncData({app}) {
-          let response = await app.$axios.get('/kitchen')
-
-          return {
-              deliveryData: response.data.data
+              title: `Чито-ра - Грузинская кухня и вкуснейшие хинкали в Москве`,
           }
       }
   }
 </script>
-
-<style lang="scss" scoped>
-  /*.travel-map {*/
-    /*height: 400px;*/
-  /*}*/
-</style>
