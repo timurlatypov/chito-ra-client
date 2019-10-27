@@ -5,14 +5,14 @@ module.exports = {
     ** Headers of the page
     */
     head: {
-        title: 'chito-ra',
+        title: 'Чито-ра - Ресторан грузинской кухни в Москве',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+            { hid: 'description', name: 'description', content: 'Чито-ра - Ресторан грузинской кухни в Москве' },
+            { hid: 'yandex-verification', name: 'yandex-verification', content: 'b9ed21185129ea7b' },
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Montserrat:500|PT+Serif:400,700&display=swap' },
             { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity: 'sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin: 'anonymous' },
         ]
