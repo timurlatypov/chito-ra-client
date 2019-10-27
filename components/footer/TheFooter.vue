@@ -20,7 +20,7 @@
             <div class="item center">
                 <h4 class="white">Сотрудничество</h4>
                 <div class="text-contacts">
-                    <a href="mailto:hello@chito-ra.ru">hello@chito-ra.ru</a>
+                    <a href="mailto:snab@chito-ra.ru">snab@chito-ra.ru</a>
                 </div>
             </div>
         </div>
