@@ -9,8 +9,7 @@ module.exports = {
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'Чито-ра - Ресторан грузинской кухни в Москве' },
-            { hid: 'yandex-verification', name: 'yandex-verification', content: 'b9ed21185129ea7b' },
+            { hid: 'description', name: 'description', content: 'Чито-ра - Ресторан грузинской кухни в Москве' }
         ],
         link: [
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|Montserrat:500|PT+Serif:400,700&display=swap' },
