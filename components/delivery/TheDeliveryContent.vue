@@ -30,7 +30,7 @@
                 payload: [
                     {
                         "id": 133,
-                        "name": "КОКА-КОЛА",
+                        "name": "Кока-Кола",
                         "description": null,
                         "slug": "koka-kola",
                         "live": false,
@@ -51,7 +51,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 133,
-                                        "name": "КОКА-КОЛА",
+                                        "name": "Кока-Кола",
                                         "description": null,
                                         "slug": "koka-kola",
                                         "live": false,
@@ -76,7 +76,7 @@
                     },
                     {
                         "id": 134,
-                        "name": "ФАНТА",
+                        "name": "Фанта",
                         "description": null,
                         "slug": "fanta",
                         "live": false,
@@ -97,7 +97,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 134,
-                                        "name": "ФАНТА",
+                                        "name": "Фанта",
                                         "description": null,
                                         "slug": "fanta",
                                         "live": false,
@@ -122,7 +122,7 @@
                     },
                     {
                         "id": 135,
-                        "name": "СПРАЙТ",
+                        "name": "Спрайт",
                         "description": null,
                         "slug": "sprite",
                         "live": false,
@@ -143,7 +143,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 135,
-                                        "name": "СПРАЙТ",
+                                        "name": "Спрайт",
                                         "description": null,
                                         "slug": "sprite",
                                         "live": false,
@@ -168,7 +168,7 @@
                     },
                     {
                         "id": 136,
-                        "name": "НАТАХТАРИ ЛИМОНАД",
+                        "name": "Натахтари лимонад",
                         "description": null,
                         "slug": "natahtari-limonad",
                         "live": false,
@@ -189,7 +189,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 136,
-                                        "name": "НАТАХТАРИ ЛИМОНАД",
+                                        "name": "Натахтари лимонад",
                                         "description": null,
                                         "slug": "natahtari-limonad",
                                         "live": false,
@@ -214,7 +214,7 @@
                     },
                     {
                         "id": 137,
-                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                        "name": "Домашний ягодный морс",
                         "description": null,
                         "slug": "domashnii-yagodnyi-mors",
                         "live": false,
@@ -235,7 +235,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 137,
-                                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                                        "name": "Домашний ягодный морс",
                                         "description": null,
                                         "slug": "domashnii-yagodnyi-mors",
                                         "live": false,
@@ -260,7 +260,7 @@
                     },
                     {
                         "id": 138,
-                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                        "name": "Вода минеральная Боржоми",
                         "description": null,
                         "slug": "voda-mineralnaya-borzhomi",
                         "live": false,
@@ -281,7 +281,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 138,
-                                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                                        "name": "Вода минеральная Боржоми",
                                         "description": null,
                                         "slug": "voda-mineralnaya-borzhomi",
                                         "live": false,
@@ -306,7 +306,7 @@
                     },
                     {
                         "id": 139,
-                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                        "name": "Вода минеральная Саирме",
                         "description": null,
                         "slug": "voda-mineralnaya-sairme",
                         "live": false,
@@ -327,7 +327,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 139,
-                                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                                        "name": "Вода минеральная Саирме",
                                         "description": null,
                                         "slug": "voda-mineralnaya-sairme",
                                         "live": false,
@@ -352,7 +352,7 @@
                     },
                     {
                         "id": 140,
-                        "name": "ШВЕПС ТОНИК",
+                        "name": "Швепс Тоник",
                         "description": null,
                         "slug": "shveps-tonik",
                         "live": false,
@@ -373,7 +373,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 140,
-                                        "name": "ШВЕПС ТОНИК",
+                                        "name": "Швепс Тоник",
                                         "description": null,
                                         "slug": "shveps-tonik",
                                         "live": false,
