@@ -24,7 +24,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/develop/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env development"
         },
         production: {
             user: "root",
@@ -33,7 +33,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/production/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env production"
         },
     }
 };
