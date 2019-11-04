@@ -10,17 +10,17 @@
             <div class="item center">
                 <h4 class="white">Позвонить</h4>
                 <div class="text-contacts">
-                    <a class="tel" href="tel:+74997747474">+7 (499) 444-74-74</a>
+                    <a class="tel" href="tel:+74994447474">+7 (499) 444-74-74</a>
                 </div>
             </div>
             <div class="item">
-                <TheSubscribeForm/>
+                <TheReviewForm/>
                 <TheSocialList/>
             </div>
             <div class="item center">
-                <h4 class="white">Написать</h4>
+                <h4 class="white">Сотрудничество</h4>
                 <div class="text-contacts">
-                    <a href="mailto:hello@chito-ra.ru">hello@chito-ra.ru</a>
+                    <a href="mailto:snab@chito-ra.ru">snab@chito-ra.ru</a>
                 </div>
             </div>
         </div>

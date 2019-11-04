@@ -33,7 +33,6 @@
     @import "../../assets/styles/variables";
 
     .btn {
-        display: block;
         padding: 10px 20px;
         font: $family-sans-serif;
         font-weight: 700;
@@ -79,9 +78,16 @@
         }
 
         &--3 {
-            color: #fff;
-            background: #3D3BFF;
-            border-radius: 51px;
+            padding: 10px 20px;
+            border: 1px solid white;
+            background-color: transparent;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+            color: white;
+            user-select: none;
+
             &:focus,
             &:hover {
                 background-color: $color-3;

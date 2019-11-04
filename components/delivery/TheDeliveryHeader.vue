@@ -2,26 +2,10 @@
     <div class="delivery-header">
         <div class="wrapper">
             <div class="delivery-header__title">Доставим быстро!</div>
-            <div class="delivery-header__subtitle">+7 (495) 444-74-74</div>
+            <div class="delivery-header__subtitle"><a href="tel:74994447474">+7 (499) 444-74-74</a></div>
         </div>
     </div>
 </template>
-
-<script>
-    export default {
-        data() {
-            return {
-
-            }
-        },
-        methods: {
-
-        },
-        mounted() {
-
-        }
-    }
-</script>
 
 <style lang="scss" scoped>
     @import "../../assets/styles/variables";
@@ -54,9 +38,14 @@
 
         &__subtitle {
             font-family: 'PT Serif', serif;
+            color: white;
             font-size: 20px;
             font-weight: 700;
             min-width: 320px;
+
+            a {
+                color: white;
+            }
         }
 
         @include media(sm) {

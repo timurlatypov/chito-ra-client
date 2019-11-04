@@ -3,7 +3,7 @@
         <div class="item-1"></div>
         <div class="item-2">
             <div class="base-layout">
-                <div class="centered">
+                <div class="centered" id="top">
                     <div class="centered__inner">
                         <TheDeliveryTabs>
                             <TheTab v-for="(category, index) in data[0].children" :key="index" :products="category.products" :name="category.name" :slug="category.slug" />
@@ -30,7 +30,7 @@
                 payload: [
                     {
                         "id": 133,
-                        "name": "КОКА-КОЛА",
+                        "name": "Кока-Кола",
                         "description": null,
                         "slug": "koka-kola",
                         "live": false,
@@ -51,7 +51,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 133,
-                                        "name": "КОКА-КОЛА",
+                                        "name": "Кока-Кола",
                                         "description": null,
                                         "slug": "koka-kola",
                                         "live": false,
@@ -66,7 +66,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/qWSDdkQ1xVDUOIr1uT4NMq2BKtwqjRMKrUNXsbQV.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -76,7 +76,7 @@
                     },
                     {
                         "id": 134,
-                        "name": "ФАНТА",
+                        "name": "Фанта",
                         "description": null,
                         "slug": "fanta",
                         "live": false,
@@ -97,7 +97,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 134,
-                                        "name": "ФАНТА",
+                                        "name": "Фанта",
                                         "description": null,
                                         "slug": "fanta",
                                         "live": false,
@@ -112,7 +112,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/HcFixcU528o3F0OuKwr5vE4GEjdimVj2t9ife9WM.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -122,7 +122,7 @@
                     },
                     {
                         "id": 135,
-                        "name": "СПРАЙТ",
+                        "name": "Спрайт",
                         "description": null,
                         "slug": "sprite",
                         "live": false,
@@ -143,7 +143,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 135,
-                                        "name": "СПРАЙТ",
+                                        "name": "Спрайт",
                                         "description": null,
                                         "slug": "sprite",
                                         "live": false,
@@ -158,7 +158,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/W1UczvEXxmqrwffYCZn2KjEMsZunvc6BGosGTnBM.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -168,7 +168,7 @@
                     },
                     {
                         "id": 136,
-                        "name": "НАТАХТАРИ ЛИМОНАД",
+                        "name": "Натахтари лимонад",
                         "description": null,
                         "slug": "natahtari-limonad",
                         "live": false,
@@ -189,7 +189,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 136,
-                                        "name": "НАТАХТАРИ ЛИМОНАД",
+                                        "name": "Натахтари лимонад",
                                         "description": null,
                                         "slug": "natahtari-limonad",
                                         "live": false,
@@ -204,7 +204,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/guoLxAvMSiHmMJ6yRdBmWcaAJkWJmRGmqWA1xR7S.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -214,7 +214,7 @@
                     },
                     {
                         "id": 137,
-                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                        "name": "Домашний ягодный морс",
                         "description": null,
                         "slug": "domashnii-yagodnyi-mors",
                         "live": false,
@@ -235,7 +235,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 137,
-                                        "name": "ДОМАШНИЙ ЯГОДНЫЙ МОРС",
+                                        "name": "Домашний ягодный морс",
                                         "description": null,
                                         "slug": "domashnii-yagodnyi-mors",
                                         "live": false,
@@ -250,7 +250,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/N29b9NDWkRfmKGqcxkDpVxxpfKpOzyGzQRWtZgHi.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -260,7 +260,7 @@
                     },
                     {
                         "id": 138,
-                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                        "name": "Вода минеральная Боржоми",
                         "description": null,
                         "slug": "voda-mineralnaya-borzhomi",
                         "live": false,
@@ -281,7 +281,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 138,
-                                        "name": "ВОДА МИНЕРАЛЬНАЯ БОРЖОМИ",
+                                        "name": "Вода минеральная Боржоми",
                                         "description": null,
                                         "slug": "voda-mineralnaya-borzhomi",
                                         "live": false,
@@ -296,7 +296,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/D5era4RbE0jBUusHy3whigt7FOBUtQlRO6i8Czs0.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -306,7 +306,7 @@
                     },
                     {
                         "id": 139,
-                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                        "name": "Вода минеральная Саирме",
                         "description": null,
                         "slug": "voda-mineralnaya-sairme",
                         "live": false,
@@ -327,7 +327,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 139,
-                                        "name": "ВОДА МИНЕРАЛЬНАЯ САИРМЕ",
+                                        "name": "Вода минеральная Саирме",
                                         "description": null,
                                         "slug": "voda-mineralnaya-sairme",
                                         "live": false,
@@ -342,7 +342,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/zUKpcvVuZ8uPsTIpT3tn77BXTItpnEFV9EZbdbj6.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -352,7 +352,7 @@
                     },
                     {
                         "id": 140,
-                        "name": "ШВЕПС ТОНИК",
+                        "name": "Швепс Тоник",
                         "description": null,
                         "slug": "shveps-tonik",
                         "live": false,
@@ -373,7 +373,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 140,
-                                        "name": "ШВЕПС ТОНИК",
+                                        "name": "Швепс Тоник",
                                         "description": null,
                                         "slug": "shveps-tonik",
                                         "live": false,
@@ -388,7 +388,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/2o2cNaYmnBvFTbWUCQie11GADLBqMhZFzO3d56CF.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -398,7 +398,7 @@
                     },
                     {
                         "id": 141,
-                        "name": "ЯБЛОКО",
+                        "name": "Яблочный сок",
                         "description": null,
                         "slug": "apple-juice",
                         "live": false,
@@ -419,7 +419,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 141,
-                                        "name": "ЯБЛОКО",
+                                        "name": "Яблочный сок",
                                         "description": null,
                                         "slug": "apple-juice",
                                         "live": false,
@@ -434,7 +434,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/oFVqx211nfrlxAuu5zxAVHo2QBGxQRNWJ8p2V7S1.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -444,7 +444,7 @@
                     },
                     {
                         "id": 142,
-                        "name": "ВИШНЯ",
+                        "name": "Вишневый сок",
                         "description": null,
                         "slug": "cherry-juice",
                         "live": false,
@@ -465,7 +465,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 142,
-                                        "name": "ВИШНЯ",
+                                        "name": "Вишневый сок",
                                         "description": null,
                                         "slug": "cherry-juice",
                                         "live": false,
@@ -480,7 +480,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/IAZ8SffujMWVyxHQBtM4vFtFszTZW6i3jbEso8xR.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -490,7 +490,7 @@
                     },
                     {
                         "id": 143,
-                        "name": "ТОМАТ",
+                        "name": "Томатный сок",
                         "description": null,
                         "slug": "tomato-juice",
                         "live": false,
@@ -511,7 +511,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 143,
-                                        "name": "ТОМАТ",
+                                        "name": "Томатный сок",
                                         "description": null,
                                         "slug": "tomato-juice",
                                         "live": false,
@@ -526,7 +526,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/7bn8290mSoB72SN7f5b9t3TuZgeAwiyZsUTOPiC1.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -536,7 +536,7 @@
                     },
                     {
                         "id": 144,
-                        "name": "АПЕЛЬСИН",
+                        "name": "Апельсиновый сок",
                         "description": null,
                         "slug": "orange-juice",
                         "live": false,
@@ -557,7 +557,7 @@
                                     "in_stock": false,
                                     "product": {
                                         "id": 144,
-                                        "name": "АПЕЛЬСИН",
+                                        "name": "Апельсиновый сок",
                                         "description": null,
                                         "slug": "orange-juice",
                                         "live": false,
@@ -572,7 +572,7 @@
                         },
                         "images": [
                             {
-                                "name": "images/default.jpg",
+                                "name": "images/aRRSh03ufFzY2p2sENTSDHjuOQm6pb7cWhRPlqh4.jpeg",
                                 "alt": ""
                             }
                         ],
@@ -582,6 +582,10 @@
                     }
                 ],
             }
+        },
+        asyncData (context, {app}) {
+            console.log(context);
+            console.log(app);
         }
     }
 </script>
@@ -634,7 +638,7 @@
                 width: 200px;
                 background: $backgroung-ormanent-white no-repeat bottom;
                 transform: translateX(50%);
-                top: -50px;
+                top: -49px;
                 right: 50%;
             }
 
@@ -645,7 +649,7 @@
                 width: 200px;
                 background: $backgroung-ormanent-white no-repeat bottom;
                 transform: translateX(50%) rotate(180deg);
-                bottom: -50px;
+                bottom: -49px;
                 right: 50%;
             }
         }

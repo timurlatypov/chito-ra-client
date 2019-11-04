@@ -9,20 +9,10 @@
 
 <script>
     export default {
-        data() {
+        head () {
             return {
-
+                title: `Контактная информация Чито-ра`,
             }
         },
-        methods: {
-
-        },
-        mounted() {
-
-        }
     }
 </script>
-
-<style lang="scss">
-
-</style>

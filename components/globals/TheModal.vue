@@ -1,7 +1,7 @@
 <template>
     <div v-if="visible">
         <div class="app-modal" @click.prevent="$modal.hide(name)"></div>
-        <div class="app-modal__inner">
+        <div class="app-modal__inner" :style="`width: ${mWidth}; max-width: ${mMaxWidth}`">
             <div class="app-modal__close" @click.prevent="$modal.hide(name)"></div>
             <slot name="body" :params="params" />
         </div>
@@ -20,6 +20,14 @@
             name: {
                 required: true,
                 type: String
+            },
+            mWidth: {
+                type: String,
+                default: '90%'
+            },
+            mMaxWidth: {
+                type: String,
+                default: '800px'
             }
         },
         methods:{
@@ -79,12 +87,14 @@
             top: -25px;
             right: -25px;
             color: white;
+            cursor: pointer;
             background-color: black;
             width: 50px;
             height: 50px;
             -webkit-border-radius: 50px;
             -moz-border-radius: 50px;
             border-radius: 50px;
+            z-index: 1;
 
             &:after {
                 content: '';
@@ -120,9 +130,9 @@
              left: 50%;
              border-radius: 4px;
              transform: translate(-50%, -50%);
-             //background-color: #fff;
-             width: 90%;
-             max-width: 800px;
+             /*width: 90%;*/
+             /*max-width: 800px;*/
+            min-height: 500px;
              z-index: 100;
          }
     }

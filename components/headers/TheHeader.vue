@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-        <no-ssr>
+        <client-only>
             <div class="header__carousel">
                 <agile :navButtons=false :speed=1000 :pauseOnHover=false :autoplay=true :autoplaySpeed=7000 :dots=false :fade=true :infinite=true >
                     <div class="slide">
@@ -20,7 +20,7 @@
                     </div></div>
                 </agile>
             </div>
-        </no-ssr>
+        </client-only>
         <div class="header__reserve">
             <h4 class="white">Забронировать стол</h4>
         </div>
@@ -106,7 +106,7 @@
                 background: $backgroung-ormanent no-repeat bottom;
                 display: inline-block;
                 transform: translateX(50%);
-                top: -50px;
+                top: -49px;
                 right: 50%;
             }
 
@@ -136,25 +136,25 @@
     }
     .slide-1 {
         position: relative;
-        filter: contrast(1.2);
         background-image: linear-gradient(
                         to bottom,
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-4.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
+        filter: contrast(1.2);
     }
     .slide-2 {
         position: relative;
-        filter: contrast(1.2);
+        filter: contrast(1.1);
         background-image: linear-gradient(
                         to bottom,
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2-new.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -165,7 +165,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-3.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-3.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -176,7 +176,7 @@
                         rgba(0,0,0,0.90) 0%,
                         rgba(0,0,0,0.55) 20%,
                         rgba(0,0,0,0.3) 50%,
-                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-1.png');
+                        rgba(0,0,0,0.1) 100%), url('../../assets/images/header/background-2.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }

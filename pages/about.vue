@@ -13,10 +13,11 @@
             return {
 
             }
-        }
+        },
+        head () {
+            return {
+                title: `О ресторане Чито-ра - Вкуснейшие хинкали`,
+            }
+        },
     }
 </script>
-
-<style lang="scss">
-
-</style>

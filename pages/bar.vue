@@ -4,7 +4,6 @@
         <div class="container-fluid" style="overflow: hidden">
             <div class="row">
                 <div class="bar-page">
-
                     <div class="bar-page__left">
                         <div class="bar-page__background">
                             <no-ssr>
@@ -24,7 +23,6 @@
                             </no-ssr>
                         </div>
                     </div>
-
                     <div class="bar-page__right">
                         <BarCategoryCard v-for="category in bar[0].children" :key="category.id" :category="category"/>
                     </div>
@@ -42,9 +40,10 @@
                 bar: []
             }
         },
-        methods: {},
-        mounted() {
-
+        head () {
+            return {
+                title: `Барное меню ресторана Чито-ра - Грузинская кухня и вкуснейшие хинкали в Москве`,
+            }
         },
         async asyncData({app}) {
             let response = await app.$axios.get('/bar')

@@ -42,7 +42,7 @@
                 </template>
             </div>
             <div class="navbar-end">
-                <a class="navbar-item call-us" href="tel:+74997747474">+7 (499) 444-74-74</a>
+                <a class="navbar-item call-us" href="tel:+74994447474">+7 (499) 444-74-74</a>
                 <!--<a class="navbar-item">-->
                     <!--<span class="icon is-cursor-pointer">-->
                         <!--<i class="fas fa-shopping-cart fa-lg"></i>-->
@@ -151,7 +151,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        background: #fff;
+        background: #f5f3f0;
         min-height: 150px;
         margin-top: 80px;
         border-bottom: 1px solid $color-3;

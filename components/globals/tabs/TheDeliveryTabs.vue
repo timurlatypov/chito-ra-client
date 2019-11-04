@@ -1,5 +1,6 @@
 <template>
     <div class="delivery-tabs">
+
         <div class="categories">
             <ul>
                 <li v-for="(tab, index) in tabs" :class="{'active': tab.active}" :key="index">
@@ -8,6 +9,17 @@
             </ul>
         </div>
         <slot />
+        <div class="control-wrapper">
+            <div></div>
+            <div style="text-align: center; justify-self: center" class="scroll-top" @click="scrollTo()"></div>
+            <div style="text-align: right">
+                <template v-for="(tab, index) in tabs">
+                    <div v-show="tab.active" :key="tab.slug">
+                        <a v-if="index < tabs.length-1" @click.prevent="nextTab(tabs[index+1].slug)" v-html="tabs[index+1].name"></a>
+                    </div>
+                </template>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -46,6 +58,13 @@
                 this.tabs.forEach((tab) => {
                     tab.active = (tab.slug === selectedTab.slug)
                 })
+            },
+            nextTab(next) {
+                this.switchTab(next)
+                this.scrollTo()
+            },
+            scrollTo() {
+                this.$scrollTo('#top');
             }
         },
         created() {
@@ -98,7 +117,7 @@
                     color: $color-3;
                     font-size: 12px;
                     font-weight: 500;
-                    letter-spacing: -0.5px;
+                    letter-spacing: -0.01px;
                     user-select: none;
                     text-decoration: none;
                     white-space: nowrap;
@@ -130,6 +149,93 @@
 
         @include media(sm) {
             margin: 50px;
+        }
+    }
+
+    .control-wrapper {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+        box-sizing: border-box;
+        margin-top: 30px;
+
+        a {
+            color: $color-3;
+            font-family: "Graphik LCG", sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: -0.01px;
+            user-select: none;
+            text-decoration: none;
+            white-space: nowrap;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 30px;
+            margin: 5px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                content: "";
+                border: 1px solid $bg-color-1;
+                background-color: $bg-color-1;
+                color: $color-1;
+            }
+
+            @include media(sm) {
+                font-size: 16px;
+                padding: 10px 25px;
+            }
+        }
+    }
+
+    .scroll-top {
+        position: relative;
+        width: 38px;
+        height: 38px;
+        border-radius: 20px;
+        border: 1px solid $color-3;
+        cursor: pointer;
+        transform: translateY(-4px);
+        transition: all 0.3s ease;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: $color-3;
+            width: 12px;
+            height: 1px;
+            top: 18px;
+            left: 16px;
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: $color-3;
+            width: 12px;
+            height: 1px;
+            top: 18px;
+            left: 8px;
+            transform: rotate(-45deg);
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            background-color: $color-3;
+            border-color: $color-3;
+
+            &:after,
+            &:before {
+                background-color: white;
+            }
         }
     }
 

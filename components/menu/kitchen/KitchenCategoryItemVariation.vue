@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="(variation, index) in variations" :key="index">
-            <span style="color: #70747d; font-style: italic;">{{ variation.name }} гр</span> / <b>{{ variation.price }}</b>
+            <nobr><span class="modal-box__volume">{{ variation.name }} гр /</span> <span class="modal-box__price">{{ variation.price }}</span></nobr>
         </div>
     </div>
 </template>
@@ -20,7 +20,3 @@
         }
     }
 </script>
-
-<style lang="scss">
-
-</style>

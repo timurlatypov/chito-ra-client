@@ -37,12 +37,11 @@
                 }
             }
         },
-        mounted() {
-            console.log(this.products);
-        }
     }
 </script>
 
 <style lang="scss" scoped>
+    .scroll-top {
 
+    }
 </style>

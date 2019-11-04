@@ -18,7 +18,7 @@
         font-weight: 700;
         text-align: center;
         line-height: 130%;
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -100%, 0);
         width: 70%;
 
         @include media(sm) {

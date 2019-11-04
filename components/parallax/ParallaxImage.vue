@@ -1,85 +1,44 @@
 <template>
-    <div :style="{height: `${compensatedHeight}px`, }" class="ParallaxImage">
-        <ParallaxElement :factor="compensatedFactor" :style="{paddingTop: `${aspectRatio * 100}%`,}" class="ParallaxImage__aspect-ratio-wrap">
-            <div ref="inside" class="ParallaxImage__aspect-ratio-inside" :class="bgClass">
+    <div style="height: 100%;" class="ParallaxImage">
+        <client-only>
+            <parallax :fixed=true :sectionHeight=70>
+                <div class="has-background-image"></div>
                 <slot/>
-            </div>
-        </ParallaxElement>
+            </parallax>
+        </client-only>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'ParallaxImage',
-        props: {
-            width: {
-                required: true,
-                type: Number,
-            },
-            height: {
-                required: true,
-                type: Number,
-            },
-            factor: {
-                default: 0.25,
-                type: Number,
-            },
-            bgClass: {
-                default: null,
-                type: String
-            }
-        },
-        data() {
-            return {
-                innerHeight: 0,
-            };
-        },
-        computed: {
-            aspectRatio() {
-                return this.height / this.width;
-            },
-            compensatedFactor() {
-                // Because the parallax effect is relative
-                // to the containers height and because we
-                // shrink the containers height by the given
-                // factor, we have to compensate this by
-                // increasing the factor.
-                return this.factor * 2;
-            },
-            compensatedHeight() {
-                // We want the image to scroll inside of a
-                // container to prevent the image scrolling
-                // above its sourounding elements. The
-                // container must be shrinked by the given
-                // factor to make sure we don't have any
-                // whitespace when scrolling.
-                return this.innerHeight - (this.innerHeight * this.factor);
-            },
-        },
-        mounted() {
-            this.setInnerHeight();
+    import Parallax from 'vue-parallaxy'
 
-            const eventHandler = () => requestAnimationFrame(this.setInnerHeight);
-            window.addEventListener('resize', eventHandler);
-            this.$on('hook:destroyed', () => {
-                window.removeEventListener('resize', eventHandler);
-            });
-        },
-        methods: {
-            setInnerHeight() {
-                this.innerHeight = this.$refs.inside.getBoundingClientRect().height;
-            },
+    export default {
+        components: {
+            Parallax
         },
     };
 </script>
 
 <style lang="scss">
+    .has-background-image {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+                        to bottom,
+                        rgba(0,0,0,0.60) 0%,
+                        rgba(0,0,0,0.25) 50%,
+                        rgba(0,0,0,0.60) 100%), url(../../assets/images/contacts/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(1.2);
+    }
+
     .ParallaxImage__aspect-ratio-wrap {
         position: relative;
         top: -100%;
         height: 0;
         overflow: hidden;
-    }
+        }
 
     .ParallaxImage__aspect-ratio-inside {
         position: absolute;
@@ -87,5 +46,8 @@
         left: 0;
         width: 100%;
         height: 100%;
+    }
+    .filter-image {
+
     }
 </style>
