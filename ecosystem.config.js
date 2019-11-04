@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "chito-ra" + "-" + process.env.NODE_ENV,
+            name: "chito-ra",
             script: "npm",
             args: "start",
             watch : true,
