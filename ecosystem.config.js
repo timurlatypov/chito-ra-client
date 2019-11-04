@@ -1,15 +1,11 @@
-const SUFFIX = process.argv.indexOf('--env') === -1 ? '' :
-    '-' + process.argv[process.argv.indexOf('--env')+1]
-
 module.exports = {
     apps: [
         {
-            name: "chito-ra" + SUFFIX,
-            append_env_to_name: true,
+            name: "chito-ra" + "-" + process.env.NODE_ENV,
             script: "npm",
             args: "start",
             watch : true,
-            env_development: {
+            env: {
                 NODE_ENV: 'development',
                 PORT: 3001
             },
@@ -24,10 +20,10 @@ module.exports = {
             user: "root",
             host: "193.124.178.241",
             key: "~/.ssh/id_rsa_chitora",
-            ref: "origin/master",
+            ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/production/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env production"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
         },
         develop : {
             user: "root",
@@ -36,7 +32,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/develop/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env development"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
         }
     }
 };
