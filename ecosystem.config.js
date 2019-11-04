@@ -5,15 +5,16 @@ module.exports = {
             script: "npm",
             args: "start",
             watch : true,
-            env: {},
-            env_development: {
-                "PORT": 4000,
-                "NODE_ENV": "development"
+            env: {
+                HOST: "127.0.0.1",
+                PORT: 3000,
+                NODE_ENV: "development"
             },
             env_production: {
-                "PORT": 3000,
-                "NODE_ENV": "production",
-            }
+                HOST: "127.0.0.2",
+                PORT: 3000,
+                NODE_ENV: "production"
+            },
         }
     ],
     deploy: {
@@ -24,7 +25,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/develop/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env development"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
         },
         production: {
             user: "root",
@@ -33,7 +34,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/production/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env production"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
         },
     }
 };
