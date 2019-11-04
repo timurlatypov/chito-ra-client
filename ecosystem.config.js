@@ -9,7 +9,7 @@ module.exports = {
             script: "npm",
             args: "start",
             watch : true,
-            env_develop: {
+            env_development: {
                 NODE_ENV: 'development',
                 PORT: 3001
             },
@@ -36,7 +36,7 @@ module.exports = {
             ref: "origin/develop",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/develop/",
-            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env develop"
+            "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save --env development"
         }
     }
 };
