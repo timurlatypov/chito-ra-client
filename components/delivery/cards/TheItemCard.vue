@@ -1,7 +1,7 @@
 <template>
     <div class="delivery-card">
         <div class="product-thumb" @click.prevent="$modal.show('menu-card', item)">
-            <img oncontextmenu="return false;" v-for="(image, index) in item.images" :src="`http://apidev.new-chito-ra.site/storage/${image.name}`" alt="" :key="index">
+            <img oncontextmenu="return false;" v-for="(image, index) in item.images" :src="`https://api.chito-ra.ru/storage/${image.name}`" alt="" :key="index">
         </div>
         <div class="product-text">
             <div class="product-text__title">{{ item.name }}</div>

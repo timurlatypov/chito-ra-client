@@ -6,7 +6,7 @@
                  :key="index"
                  :style="`
                     background-color: #f5f3f0;
-                    background-image: url(http://apidev.new-chito-ra.site/storage/${image.name});
+                    background-image: url(https://api.chito-ra.ru/storage/${image.name});
                     background-position: left center;
                     background-repeat: no-repeat;
                     background-size: calc(100vw/2);
@@ -18,7 +18,7 @@
                     <div class="row">
                         <div class="has-text-centered">
                             <template v-if="category.sketch.length">
-                                <img :src="`http://apidev.new-chito-ra.site/storage/${category.sketch[0].name}`" width="200px">
+                                <img :src="`https://api.chito-ra.ru/storage/${category.sketch[0].name}`" width="200px">
                             </template>
                         </div>
                     </div>

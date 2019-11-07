@@ -3,7 +3,7 @@
         <template slot="body" slot-scope="{ params }">
             <div class="modal-content">
                 <p class="image is-16by9">
-                    <img oncontextmenu="return false;" :src="`http://apidev.new-chito-ra.site/storage/${params.images[0].name}`" alt="">
+                    <img oncontextmenu="return false;" :src="`https://api.chito-ra.ru/storage/${params.images[0].name}`" alt="">
                 </p>
             </div>
             <div class="modal-box">
