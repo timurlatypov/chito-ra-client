@@ -2,22 +2,14 @@
     <header class="header">
         <client-only>
             <div class="header__carousel">
-                <agile :navButtons=false :speed=1000 :pauseOnHover=false :autoplay=true :autoplaySpeed=7000 :dots=false :fade=true :infinite=true >
-                    <div class="slide">
-                        <div class="slide-1 full-height">
-                            <div class="slide-text">Вкусно. Сытно.<br>По-домашнему.</div>
+                <agile :navButtons=false :speed=1000 :pauseOnHover=false :autoplay=true :autoplaySpeed=7000 :dots=false :fade=true :infinite=true>
+
+                    <div class="slide" v-for="order in orderArray" :key="order">
+                        <div :class="`slide-${order} full-height`">
+                            <div class="slide-text" v-html="slides[order-1].title"></div>
                         </div>
                     </div>
-                    <div class="slide"><div class="slide-2 full-height">
-                        <div class="slide-text">Первая<br>хинкальная Москвы.</div>
 
-                    </div></div>
-                    <div class="slide"><div class="slide-3 full-height">
-                        <div class="slide-text">Свежие и<br>натуральные продукты.</div>
-                    </div></div>
-                    <div class="slide"><div class="slide-4 full-height">
-                        <div class="slide-text">Мы работаем <br>более 12 лет!</div>
-                    </div></div>
                 </agile>
             </div>
         </client-only>
@@ -31,9 +23,47 @@
     export default {
         data() {
             return {
-
+                slides: [
+                    {
+                        title: 'Вкусно. Сытно.<br>По-домашнему.',
+                        id: 1,
+                    },
+                    {
+                        title: 'Первая<br>хинкальная Москвы.',
+                        id: 2,
+                    },
+                    {
+                        title: 'Свежие и<br>натуральные продукты.',
+                        id: 3,
+                    },
+                    {
+                        title: 'Мы работаем <br>более 12 лет!',
+                        id: 4,
+                    },
+                ],
+                start: 0,
+                orderArray: []
             }
         },
+        methods: {
+            setOrderedArray() {
+                let array = [];
+                let length = 4;
+                let day = ((new Date).getDate() % 4) + 1;
+
+                array.push(day);
+
+                for (let i = 1; i <= length; i++) {
+                    if (!array.includes(i)) {
+                        array.push(i)
+                    }
+                }
+                this.orderArray = array
+            },
+        },
+        created() {
+            this.setOrderedArray()
+        }
     };
 </script>
 
