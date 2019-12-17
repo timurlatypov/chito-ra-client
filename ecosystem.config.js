@@ -15,8 +15,8 @@ module.exports = {
     deploy: {
         production: {
             user: "root",
-            host: "193.124.178.241",
-            key: "~/.ssh/id_rsa_chitora",
+            host: "176.57.215.122",
+            key: "~/.ssh/id_rsa_chitora_timeweb",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
             path: "/var/www/chito-ra/client/production/",
