@@ -19,7 +19,7 @@ module.exports = {
             key: "~/.ssh/id_rsa_chitora_timeweb",
             ref: "origin/master",
             repo: "https://github.com/timurlatypov/chito-ra-client.git",
-            path: "/var/www/chito-ra/client/production/",
+            path: "/var/www/client/production/",
             "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.config.js && pm2 save"
         }
     }
