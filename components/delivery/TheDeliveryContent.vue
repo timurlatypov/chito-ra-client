@@ -43,8 +43,8 @@
                             "Порция": [
                                 {
                                     "id": 119,
-                                    "name": "250",
-                                    "price": "120,00 ₽",
+                                    "name": "330 мл",
+                                    "price": "140,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -89,8 +89,8 @@
                             "Порция": [
                                 {
                                     "id": 120,
-                                    "name": "250 мл",
-                                    "price": "120,00 ₽",
+                                    "name": "330 мл",
+                                    "price": "140,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -135,8 +135,8 @@
                             "Порция": [
                                 {
                                     "id": 121,
-                                    "name": "250 мл",
-                                    "price": "120,00 ₽",
+                                    "name": "330 мл",
+                                    "price": "140,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -182,7 +182,7 @@
                                 {
                                     "id": 122,
                                     "name": "500 мл",
-                                    "price": "140,00 ₽",
+                                    "price": "160,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -228,7 +228,7 @@
                                 {
                                     "id": 123,
                                     "name": "300 мл",
-                                    "price": "100,00 ₽",
+                                    "price": "110,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -274,7 +274,7 @@
                                 {
                                     "id": 124,
                                     "name": "500 мл",
-                                    "price": "150,00 ₽",
+                                    "price": "170,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -320,7 +320,7 @@
                                 {
                                     "id": 125,
                                     "name": "500 мл",
-                                    "price": "140,00 ₽",
+                                    "price": "160,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
