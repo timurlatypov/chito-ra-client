@@ -412,7 +412,7 @@
                                 {
                                     "id": 127,
                                     "name": "1000 мл",
-                                    "price": "375,00 ₽",
+                                    "price": "400,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -458,7 +458,7 @@
                                 {
                                     "id": 128,
                                     "name": "1000 мл",
-                                    "price": "375,00 ₽",
+                                    "price": "400,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -504,7 +504,7 @@
                                 {
                                     "id": 129,
                                     "name": "1000 мл",
-                                    "price": "375,00 ₽",
+                                    "price": "400,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
@@ -550,7 +550,7 @@
                                 {
                                     "id": 130,
                                     "name": "1000 мл",
-                                    "price": "375,00 ₽",
+                                    "price": "400,00 ₽",
                                     "price_varies": true,
                                     "stock_count": 0,
                                     "type": "Порция",
