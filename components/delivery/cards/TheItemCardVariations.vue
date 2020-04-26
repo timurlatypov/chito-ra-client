@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-for="(variation, index) in variations" :key="index">
-            <span style="color: #000; ">{{ variation.price }}</span> / <span style="color: #70747d; font-style: italic;"><small>{{ variation.name }} гр</small></span>
+            <span style="color: #000; ">{{ variation.price }}</span> / <span style="color: #70747d; font-style: italic;"><small>{{ variation.name }}&nbsp;{{ variation.measure_type }}</small></span>
         </div>
     </div>
 </template>
