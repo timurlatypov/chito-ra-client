@@ -1,182 +1,133 @@
 <template>
-    <div class="section">
-        <TheAlert />
-        <div class="container is-fluid">
-            <div class="columns">
-                <div class="column is-three-quarters">
+  <section>
+    <TheNavigation/>
+    <TheCartHeader/>
 
-                    <ShippingAddress
-                        :addresses="addresses"
-                        v-model="form.address_id"
-                    />
+    <TheContent>
 
-                    <article class="message">
-                        <div class="message-body">
-                            <h1 class="title is-5">Payment</h1>
-                        </div>
-                    </article>
+      <ShippingAddress
+        class="mb-6"
+        :addresses="addresses"
+        v-model="form.address_id"/>
 
-                    <article class="message">
-                        <div class="message-body">
-                            <h1 class="title is-5">
-                                Shipping
-                                {{ shippingMethodId }}
-                            </h1>
-                            <div class="control">
-                                <label class="radio" v-for="method in shipping_methods" :key="method.id">
-                                    <input type="radio" name="answer" :value="method.id" v-model="shippingMethodId">
-                                    {{ method.name }}
-                                </label>
-                            </div>
-                        </div>
-                    </article>
+      <h4 class="text-center">Ваш заказ</h4>
+      <article v-if="products.length" class="p-6">
+        <CartOverview/>
+      </article>
+      <article v-else>
+        Нет товаров в заказе
 
-                    <article class="message" v-if="products.length">
-                        <div class="message-body">
-                            <h1 class="title is-5">
-                                Cart summary
-                            </h1>
-                            <CartOverview>
-                                <template slot="rows">
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="has-test-weight-bold">Доставка</td>
-                                        <td>
-                                            {{ shipping.price }}
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td class="has-test-weight-bold">Тотал</td>
-                                        <td>
-                                            {{ total }}
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                </template>
-                            </CartOverview>
-                        </div>
-                    </article>
+        <nuxt-link :to="{ name: 'delivery' }"
+                   class="transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-6 py-4 text font-bold rounded-full border-2">
+          Вернуться в меню
+        </nuxt-link>
 
-                    <article class="message">
-                        <div class="message-body">
-                            <button :disabled="empty" class="button is-info is-fullwidth is-medium">
-                                Place order
-                            </button>
-                        </div>
-                    </article>
-                </div>
-                <div class="column is-one-quarter">
-                    <article class="message">
-                        <div class="message-body">
-                            <button
-                                    :disabled="empty || submitting"
-                                    class="button is-info is-fullwidth is-medium"
-                                    @click.prevent="order"
-                            >
-                                Place order
-                            </button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
+      </article>
+
+      <div class="text-center">
+        <button
+          :disabled="empty || submitting"
+          @click.prevent="order"
+          class="transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-6 py-4 ml-4 text font-bold rounded-full border-2">
+          Отправить заказ!
+        </button>
+      </div>
+
+    </TheContent>
+    <TheFooter className="extra-padding"/>
+  </section>
 </template>
 
 <script>
-    import { mapGetters, mapActions } from 'vuex'
+  import {mapGetters, mapActions} from 'vuex'
 
-    import CartOverview from '@/components/cart/CartOverview'
-    import ShippingAddress from '@/components/checkout/addresses/ShippingAddress'
+  import CartOverview from '@/components/cart/CartOverview'
+  import ShippingAddress from '@/components/checkout/addresses/ShippingAddress'
 
-    export default {
-        components: {
-            CartOverview,
-            ShippingAddress
-        },
-        middleware: [
-            'redirectIfGuest'
-        ],
-        data() {
-            return {
-                submitting: false,
-                addresses: [],
-                shipping_methods: [],
-                form: {
-                    address_id: null
-                }
-            }
-        },
-        watch: {
-            shippingMethodId () {
-                this.getCart()
-            }
-        },
-        computed: {
-            ...mapGetters({
-                total: 'cart/total',
-                products: 'cart/products',
-                empty: 'cart/empty',
-                shipping: 'cart/shipping'
-            }),
-
-            shippingMethodId: {
-                get () {
-                    return this.shipping ? this.shipping.id : ''
-                },
-                set (shippingMethodId) {
-                    this.setShipping(
-                        this.shipping_methods.find(s => s.id === shippingMethodId)
-                    )
-                }
-            }
-
-        },
-        methods: {
-            ...mapActions({
-                setShipping: 'cart/setShipping',
-                getCart: 'cart/getCart',
-                flash: 'alert/flash'
-            }),
-
-            async order() {
-                this.submitting = true
-
-                try {
-                    await this.$axios.$post('orders', {
-                        ...this.form,
-                        shipping_method_id: this.shippingMethodId
-                    })
-
-                    await this.getCart()
-
-                    this.$router.replace({
-                        name: 'orders'
-                    })
-                } catch(e) {
-                    this.flash(e.response.data.message);
-                    this.getCart();
-                    this.submitting = false;
-                }
-            }
-        },
-        async asyncData({ app }){
-            let addresses = await app.$axios.$get('addresses')
-            let shippingMethods = await app.$axios.$get('shipping')
-
-            return {
-                addresses: addresses.data,
-                shipping_methods: shippingMethods.data
-            }
-        },
-        created() {
-            this.setShipping(this.shipping_methods[0])
+  export default {
+    components: {
+      CartOverview,
+      ShippingAddress
+    },
+    middleware: [
+      'redirectIfGuest'
+    ],
+    data() {
+      return {
+        submitting: false,
+        addresses: [],
+        shipping_methods: [],
+        form: {
+          address_id: null
         }
+      }
+    },
+    watch: {
+      shippingMethodId() {
+        this.getCart()
+      }
+    },
+    computed: {
+      ...mapGetters({
+        total: 'cart/total',
+        products: 'cart/products',
+        empty: 'cart/empty',
+        shipping: 'cart/shipping'
+      }),
+
+      shippingMethodId: {
+        get() {
+          return this.total >= 3000 ? 2 : 1;
+        },
+        set(shippingMethodId) {
+          this.setShipping(
+            this.shipping_methods.find(s => s.id === shippingMethodId)
+          )
+        }
+      }
+
+    },
+    methods: {
+      ...mapActions({
+        setShipping: 'cart/setShipping',
+        getCart: 'cart/getCart',
+        flash: 'alert/flash'
+      }),
+
+      async order() {
+        this.submitting = true
+
+        try {
+          await this.$axios.$post('orders', {
+            ...this.form,
+            shipping_method_id: this.shippingMethodId
+          })
+
+          await this.getCart()
+
+          this.$router.replace({
+            name: 'success'
+          })
+        } catch (e) {
+          this.flash(e.response.data.message);
+          this.getCart();
+          this.submitting = false;
+        }
+      }
+    },
+    async asyncData({app}) {
+      let addresses = await app.$axios.$get('addresses')
+      let shippingMethods = await app.$axios.$get('shipping')
+
+      return {
+        addresses: addresses.data,
+        shipping_methods: shippingMethods.data
+      }
+    },
+    created() {
+      this.setShipping(this.shipping_methods[0])
     }
+  }
 </script>
 
 <style lang="scss">

@@ -1,7 +1,7 @@
 <template>
-  <div class="delivery-header">
+  <div class="cart-header">
     <div class="wrapper">
-      <div class="delivery-header__title">Вкусно. Сытно.<br>По-домашнему.</div>
+      <div class="cart-header__title">Вкусно. Сытно.<br>По-домашнему.</div>
     </div>
     <TopOrnamentLine/>
   </div>
@@ -24,9 +24,10 @@
       top: -49px;
       right: 50%;
     }
+
   }
 
-  .delivery-header {
+  .cart-header {
     position: relative;
     width: 100%;
     height: 300px;

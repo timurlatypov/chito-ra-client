@@ -1,7 +1,7 @@
-export default function ({app, redirect, route}) {
-    if (app.$auth.loggedIn) {
-        return redirect({
-            name: 'index'
-        })
-    }
+export default function ({store, redirect}) {
+  if (store.user.authenticated) {
+    return redirect({
+      name: 'index'
+    })
+  }
 }

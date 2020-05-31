@@ -1,99 +1,134 @@
 <template>
-    <article class="message">
-        <div class="message-body">
-            <h1 class="title is-5">Ship to</h1>
+  <div class="text-center">
+    <h4>Адрес доставки</h4>
+    <small class="block">Создайте адрес доставки или выберите ранее сохраненный!</small>
 
-            <template v-if="selecting">
-                <ShippingAddressSelector
-                        :addresses="addresses"
-                        :selectedAddress="selectedAddress"
-                        @click="addressSelected"
-                />
-            </template>
-            <template v-else-if="creating">
-                <ShippingAddressCreator
-                    @cancel="creating = false"
-                    @created="created"
-                />
-            </template>
+    <template v-if="selecting">
+      <ShippingAddressSelector
+        :addresses="addresses"
+        :selectedAddress="selectedAddress"
+        @click="addressSelected"
+      />
+      <a @click.prevent="selecting = false"
+         class="bg-gray-300 border-gray-300 text-gray-700 hover:text-black px-4 py-2 text-sm font-bold rounded-full border-2"
+      >
+        Назад
+      </a>
+    </template>
 
-            <template v-else>
-                <template v-if="selectedAddress">
-                    {{ selectedAddress.name }}<br>
-                    {{ selectedAddress.address }}<br>
-                    {{ selectedAddress.comment }}<br>
-                </template>
-                <br>
-                <div class="field is-grouped">
-                    <p class="control">
-                        <a href="" class="button is-info" @click.prevent="selecting = true">Изменить адрес</a>
-                    </p>
-                    <p class="control">
-                        <a href="" class="button is-info" @click.prevent="creating = true">Сохранить адрес</a>
-                    </p>
-                </div>
-            </template>
+    <template v-else-if="creating">
+      <ShippingAddressCreator
+        @cancel="creating = false"
+        @created="created"
+      />
+    </template>
+
+    <template v-else-if="selectedAddress">
+      <template v-if="selectedAddress">
+        <div class="text-center p-4">
+
+          <div class="tracking-wide font-bold text-gray-700">
+            Телефон для связи
+          </div>
+          <div class="text-gray-700 mb-2 ml-4">
+            {{ selectedAddress.phone }}
+          </div>
+
+          <div class="tracking-wide font-bold text-gray-700">
+            Адрес доставки
+          </div>
+          <div class="text-gray-700 mb-2 ml-4">
+            {{ selectedAddress.address }}
+          </div>
+
+          <div class="tracking-wide font-bold text-gray-700">
+            Комментарий к заказу
+          </div>
+          <div class="text-gray-700 mb-2 ml-4">
+            {{ selectedAddress.comment }}
+          </div>
+
         </div>
-    </article>
+      </template>
+
+      <a @click.prevent="selecting = true"
+         class="mr-2 sm:mr-4 bg-gray-300 border-gray-300 text-gray-700 hover:text-black px-4 py-2 text-sm font-bold rounded-full border-2"
+      >
+        Поменять адрес
+      </a>
+      <a @click.prevent="creating = true"
+         class="bg-gray-300 border-gray-300 text-gray-700 hover:text-black px-4 py-2 text-sm font-bold rounded-full border-2"
+      >
+        Добавить адрес
+      </a>
+    </template>
+
+    <template v-else>
+      <a @click.prevent="creating = true"
+         class="transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-4 py-2 text-sm rounded-full border">
+        Добавить адрес
+      </a>
+    </template>
+  </div>
 </template>
 
 <script>
-    import ShippingAddressSelector from './ShippingAddressSelector'
-    import ShippingAddressCreator from './ShippingAddressCreator'
+  import ShippingAddressSelector from './ShippingAddressSelector'
+  import ShippingAddressCreator from './ShippingAddressCreator'
 
-    export default {
-        components: {
-            ShippingAddressSelector,
-            ShippingAddressCreator
-        },
-        props: {
-            addresses: {
-                required: true,
-                type: Array
-            }
-        },
-        data() {
-            return {
-                selecting: false,
-                creating: false,
-                localAddresses: this.addresses,
-                selectedAddress: null
-            }
-        },
-        watch: {
-            selectedAddress(address) {
-                this.$emit('input', address.id)
-            }
-        },
-        computed: {
-          defaultAddress() {
-              return this.localAddresses.find(a => a.default)
-          }
-        },
-        methods: {
-            addressSelected(address) {
-              this.switchAddress(address)
-              this.selecting = false
-            },
-            switchAddress(address) {
-                this.selectedAddress = address
-            },
-            created(address) {
-                this.localAddresses.push(address)
-                this.creating = false
+  export default {
+    components: {
+      ShippingAddressSelector,
+      ShippingAddressCreator
+    },
+    props: {
+      addresses: {
+        required: true,
+        type: Array
+      }
+    },
+    data() {
+      return {
+        selecting: false,
+        creating: false,
+        localAddresses: this.addresses,
+        selectedAddress: null
+      }
+    },
+    watch: {
+      selectedAddress(address) {
+        this.$emit('input', address.id)
+      }
+    },
+    computed: {
+      defaultAddress() {
+        return this.localAddresses.find(a => a.default)
+      }
+    },
+    methods: {
+      addressSelected(address) {
+        this.switchAddress(address)
+        this.selecting = false
+      },
+      switchAddress(address) {
+        this.selectedAddress = address
+      },
+      created(address) {
+        this.localAddresses.push(address)
+        this.creating = false
 
-                this.switchAddress(address)
-            }
-        },
-        created() {
-            if (this.addresses.length) {
-                this.switchAddress(this.defaultAddress)
-            }
-        },
-        mounted() {
+        this.switchAddress(address)
+      }
+    },
+    created() {
+      if (this.addresses.length) {
+        this.switchAddress(this.defaultAddress)
+      }
+    },
+    mounted() {
 
-        }
     }
+  }
 </script>
 
 <style lang="scss">

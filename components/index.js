@@ -1,6 +1,7 @@
 export * from './headers'
 export * from './navbar'
 export * from './about'
+export * from './cart'
 export * from './menu'
 export * from './globals'
 export * from './general'
