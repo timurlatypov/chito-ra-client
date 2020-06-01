@@ -5,7 +5,8 @@
                  class=" transition duration-300 ease-in-out hover:text-white uppercase text-white bg-orange-700 hover:bg-navi px-6 py-4 text font-bold rounded-full">
         Оформить заказ
       </nuxt-link>
-      <div class="m-6 text-sm">Количество выбранных блюд выставляется при оформлении заказа.</div>
+      <div class="mt-6 text-sm text-black">Заказы принимаются <b>с 11:00 до 21:30</b> ежедневно.</div>
+      <div class="mb-8 text-sm text-black">Количество выбранных блюд выставляется при оформлении заказа.</div>
     </div>
 
     <div class="text-center" id="top">

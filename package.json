@@ -30,7 +30,8 @@
     "vue-yandex-maps": "^0.8.17",
     "vue2-google-maps": "^0.10.7",
     "ymaps": "^0.2.1",
-    "vue-authenticate": "^1.4.1"
+    "vue-authenticate": "^1.4.1",
+    "vee-validate": "^2.1.0-beta.9"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",

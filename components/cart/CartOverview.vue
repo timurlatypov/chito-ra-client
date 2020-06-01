@@ -13,7 +13,10 @@
       :product="product"
     />
     <p class="text-left md:text-center text-lg text-black pt-4">Общая сумма:</p>
-    <p class="text-left md:text-center text-lg font-bold text-black">{{ subtotal }}</p>
+    <h4 class="text-left md:text-center pt-2 font-bold text-black">{{ subtotal }}</h4>
+    <div class="mt-4 text-sm text-center text-black">Заказы принимаются <b>с 11:00 до 21:30</b> ежедневно.</div>
+    <div class="text-sm text-center text-black">Доставка заказов <b>бесплатно от 1000 рублей.</b></div>
+    <div class="text-center text-sm text-black">Доставляем по Москве в пределах МКАД.</div>
   </div>
 </template>
 

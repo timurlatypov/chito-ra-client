@@ -17,17 +17,6 @@
                     <TheButton class="btn-primary" @click.native="$modal.show('kazakova-map')">Карта проезда</TheButton>
                 </div>
                 <div class="addresses__item">
-                    <h4>«Чито-ра»<br>на Сущевском Валу</h4>
-                    <div class="spacer"></div>
-                    <div class="addresses__subtitle">адрес</div>
-                    <div class="addresses__text">Сущевский вал, д.14б</div>
-                    <div class="spacer"></div>
-                    <div class="addresses__text">Ежедневно</div>
-                    <div class="addresses__text">12:00 - 23:00</div>
-                    <br>
-                    <TheButton class="btn-primary" @click.native="$modal.show('sushevka-map')">Карта проезда</TheButton>
-                </div>
-                <div class="addresses__item">
                     <h4>«Чито-ра»<br>на Лесной</h4>
                     <div class="spacer"></div>
                     <div class="addresses__subtitle">адрес</div>
@@ -100,7 +89,7 @@
                 grid-template-columns: repeat(1, 1fr);
             }
             @include media(md) {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -209,10 +198,10 @@
         padding: 50px 50px;
 
         @include media(sm) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
         @include media(md) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         &__subtitle {

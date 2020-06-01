@@ -99,6 +99,7 @@ module.exports = {
     {src: '@plugins/vue-authenticate', mode: 'client'},
     {src: '@plugins/vue-yandex-maps', ssr: false},
     {src: '@plugins/VueModal'},
+    {src: '@plugins/VeeValidate', mode: 'client'},
     {src: '@plugins/VueAgile', ssr: false},
     {src: '@plugins/index.js'},
     '@plugins/axios.js',

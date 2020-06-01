@@ -16,9 +16,9 @@
             <div class="menu-page__right">
                     <div class="spacer"></div>
                     <div class="row">
-                        <div class="has-text-centered">
+                        <div class="text-center">
                             <template v-if="category.sketch.length">
-                                <img :src="`https://api.chito-ra.ru/storage/${category.sketch[0].name}`" width="200px">
+                                <img :src="`https://api.chito-ra.ru/storage/${category.sketch[0].name}`" class="mx-auto" width="200px">
                             </template>
                         </div>
                     </div>
