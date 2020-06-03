@@ -17,13 +17,16 @@
         <select v-model="quantity"
                 class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
           <option value="0" v-if="quantity == 0">0</option>
-          <option
-            :value="x"
-            v-for="x in 20"
-            :key="x"
-            :selected="x == product.quantity ? product.quantity : 10">
-            {{ x }}
-          </option>
+          <template v-for="x in 20">
+            <option
+              v-if="x >= product.min_order"
+              :value="x"
+              :key="x"
+              :selected="x == product.quantity ? product.quantity : 10">
+              {{ x }}
+            </option>
+          </template>
+
         </select>
         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
           <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -79,9 +82,6 @@
         update: 'cart/update'
       })
     },
-    mounted() {
-
-    }
   }
 </script>
 

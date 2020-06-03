@@ -226,9 +226,6 @@
         }
 
         .product-text {
-          display: flex;
-          justify-content: flex-start;
-          flex-direction: column;
           min-height: 60px;
           padding: 0;
 

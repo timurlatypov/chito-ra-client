@@ -20,6 +20,10 @@ export default function ({$axios, store}) {
   $axios.onError((error) => {
     const originalRequest = error.config
 
+    if (error.response && error.response.status === 400) {
+      throw error;
+    }
+
     if (error.response && error.response.status === 401 && !originalRequest._retry) {
       if (isRefreshing) {
         return new Promise((resolve, reject) => {

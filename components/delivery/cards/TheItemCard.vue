@@ -1,5 +1,5 @@
 <template>
-    <div class="delivery-card">
+    <div class="delivery-card flex h-full flex-col items-stretch">
         <div class="product-thumb" @click.prevent="$modal.show('menu-card', item)">
             <img oncontextmenu="return false;" v-for="(image, index) in item.images" :src="`https://api.chito-ra.ru/storage/${image.name}`" alt="" :key="index">
         </div>

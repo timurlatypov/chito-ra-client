@@ -6,7 +6,9 @@ export const state = () => ({
   subtotal: null,
   total: null,
   changed: false,
-  shipping: null
+  shipping: null,
+  minAmount: false,
+  workingTime: false,
 })
 
 export const getters = {
@@ -36,9 +38,15 @@ export const getters = {
 
   shipping(state) {
     return state.shipping
+  },
+
+  minAmount(state) {
+    return state.minAmount
+  },
+
+  workingTime(state) {
+    return state.workingTime
   }
-
-
 }
 
 export const mutations = {
@@ -64,6 +72,14 @@ export const mutations = {
 
   SET_SHIPPING(state, shipping) {
     state.shipping = shipping
+  },
+
+  SET_MIN_AMOUNT(state, min) {
+    state.minAmount = min
+  },
+
+  SET_WORKING_TIME(state, payload) {
+    state.workingTime = payload
   }
 }
 
@@ -78,6 +94,8 @@ export const actions = {
     commit('SET_SUBTOTAL', response.meta.subtotal)
     commit('SET_TOTAL', response.meta.total)
     commit('SET_CHANGED', response.meta.changed)
+    commit('SET_MIN_AMOUNT', response.meta.min_amount)
+    commit('SET_WORKING_TIME', response.meta.working_time)
 
     return response
   },

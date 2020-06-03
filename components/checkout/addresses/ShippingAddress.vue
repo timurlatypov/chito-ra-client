@@ -1,7 +1,9 @@
 <template>
   <div class="text-center">
     <h4>Адрес доставки</h4>
-    <small class="block">Создайте адрес доставки или выберите ранее сохраненный!</small>
+    <div class="p-4 text-sm text-center text-black">
+      Создайте адрес доставки или выберите ранее сохраненный!
+    </div>
 
     <template v-if="selecting">
       <ShippingAddressSelector
@@ -64,10 +66,13 @@
     </template>
 
     <template v-else>
-      <a @click.prevent="creating = true"
-         class="transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-4 py-2 text-sm rounded-full border">
-        Добавить адрес
-      </a>
+      <div class="w-full text-center">
+        <button @click.prevent="creating = true"
+                class=" mx-auto text-sm block uppercase bg-gray-300 border-gray-300 text-gray-700 hover:text-black px-4 py-2 font-bold rounded-full border-2">
+          Добавить адрес
+        </button>
+      </div>
+
     </template>
   </div>
 </template>

@@ -13,14 +13,16 @@
       </article>
 
       <div class="text-center py-4">
-        <nuxt-link :to="{ name: 'delivery' }"
-                   class="inline-block mb-4 transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-4 py-2 md:px-6 md:py-4 ml-0 md:ml-4 text font-bold rounded-full border-2">
+        <button @click.prevent="$router.push({ name: 'delivery'})"
+                class="m-2 transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-4 py-2 md:px-6 md:py-4 text font-bold rounded-full border-2">
           Меню&nbsp;доставки
-        </nuxt-link>
-        <nuxt-link :to="{ name: 'checkout' }" v-if="!empty"
-                   class="inline-block mb-4 transition duration-300 ease-in-out hover:text-white uppercase text-gray-700 border-gray-700 hover:bg-gray-700 px-4 py-2 md:px-6 md:py-4 ml-0 md:ml-4 text font-bold rounded-full border-2">
+        </button>
+        <button @click.prevent="minAmount ? $router.push({ name: 'checkout'}) : ''"
+                v-if="!empty"
+                :class="minAmount ? 'text-gray-700 hover:text-white border-gray-700 hover:bg-gray-700' : 'bg-gray-300 text-white'"
+                class="m-2 transition duration-300 ease-in-out uppercase px-4 py-2 md:px-6 md:py-4 text font-bold rounded-full border-2">
           Оформить&nbsp;заказ
-        </nuxt-link>
+        </button>
       </div>
 
     </TheContent>
@@ -48,7 +50,8 @@
       ...mapGetters({
         empty: 'cart/isEmpty',
         products: 'cart/products',
-        changed: 'cart/changed'
+        changed: 'cart/changed',
+        minAmount: 'cart/minAmount'
       })
     },
   }
