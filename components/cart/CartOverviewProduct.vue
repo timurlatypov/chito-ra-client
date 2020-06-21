@@ -1,23 +1,23 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex flex-col sm:flex-row content-around sm:justify-between">
 
-    <div class="w-32 flex-none px-2 py-2 align-middle text-gray-800">
+    <div class="sm:order-1 hidden sm:block w-32 flex-none px-2 py-2 align-middle text-gray-800">
       <img class="rounded"
            :src="`https://api.chito-ra.ru/storage/${product.product.images[0].name}`"
            alt="">
     </div>
 
-    <div class="w-64 flex-none px-6 py-3 align-middle">
-      <p class="font-bold text-lg text-gray-700">{{ product.product.name }}</p>
-      <p class="text-sm text-gray-700">{{ product.name }} {{ product.measure_type }}</p>
+    <div class="order-1 sm:order-2 w-64 align-left sm:align-middle px-1 sm:px-4 py-1 sm:py-3 align-middle">
+      <p class="font-bold text-normal sm:text-lg text-gray-700"><nobr>{{ product.product.name }}</nobr></p>
+      <p class="text-sm text-gray-700"><span v-if="product.name">{{ product.name }}&nbsp;</span>{{ product.vol }} {{ product.measure_type }}</p>
     </div>
 
-    <div class="w-32 flex-none self-center px-6 py-3">
+    <div class="order-2 sm:order-3 w-32 self-start sm:self-center px-1 sm:px-4 py-1 sm:py-3">
       <div class="control">
         <select v-model="quantity"
                 class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
           <option value="0" v-if="quantity == 0">0</option>
-          <template v-for="x in 20">
+          <template v-for="x in product.max_order ? product.max_order : 20">
             <option
               v-if="x >= product.min_order"
               :value="x"
@@ -36,20 +36,23 @@
       </div>
     </div>
 
-    <div class="w-32 flex-none self-center px-6 py-3 text-gray-700">
+    <div class="order-4 sm:order-4 w-32 self-start sm:self-center px-1 sm:px-4 py-1 sm:py-3 text-gray-700">
       {{ product.total }}
     </div>
 
-    <div class="w-32 flex-none self-center px-6 py-3 text-right">
+    <div class="order-3 sm:order-5 w-32 self-start sm:self-center px-1 sm:px-4 py-1 sm:py-3 text-right">
       <button @click.prevent="destroy(product.id)"
               class="transition duration-300 ease-in-out uppercase bg-gray-200 border border-gray-200 text-gray-700 hover:text-black px-4 py-2 text-sm font-bold rounded-full">
         <nobr>
+          Удалить&nbsp;
           <span class="icon is-cursor-pointer">
             <i class="fas fa-trash-alt"></i>
-          </span>&nbsp;Удалить
+          </span>
         </nobr>
       </button>
     </div>
+
+    <hr>
 
   </div>
 </template>

@@ -7,6 +7,7 @@
     <KazakovaMapModal/>
     <SushevkaMapModal/>
     <AuthModal/>
+    <ProductVariationsModal/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@
   import KazakovaMapModal from '@/components/globals/modals/KazakovaMapModal'
   import SushevkaMapModal from '@/components/globals/modals/SushevkaMapModal'
   import AuthModal from '@/components/globals/modals/auth/AuthModal'
+  import ProductVariationsModal from '@/components/globals/modals/variations/ProductVariationsModal'
 
   export default {
     components: {
@@ -27,6 +29,7 @@
       KazakovaMapModal,
       SushevkaMapModal,
       AuthModal,
+      ProductVariationsModal
     },
     computed: {
       ...mapGetters({

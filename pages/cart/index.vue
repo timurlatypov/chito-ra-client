@@ -5,7 +5,7 @@
 
     <TheContent>
       <h1 class="title text-center is-4">Ваша корзина</h1>
-      <article v-if="products.length" class="p-6">
+      <article v-if="products.length" class="p-2 sm:p-6">
         <CartOverview/>
       </article>
       <article v-else>
