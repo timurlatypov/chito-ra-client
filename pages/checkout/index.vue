@@ -109,10 +109,10 @@
           shipping_method_id: this.shippingMethodId
         })
           .then((response) => {
+            this.$router.push({ name: 'success' })
             this.getCart()
           })
           .catch((error) => {
-            console.log(error.response);
             this.timeError = error.response.data.error;
           })
 
