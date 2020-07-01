@@ -30,6 +30,9 @@ module.exports = {
       {rel: 'apple-icon', sizes: '72x72', href: '/apple-icon-72x72.png'},
       {rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png'},
       {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png'}
+    ],
+    script: [
+      {src: 'pixel.js', type: 'text/javascript'}
     ]
   },
   /*
