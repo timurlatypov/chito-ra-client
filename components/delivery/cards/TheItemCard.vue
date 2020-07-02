@@ -11,7 +11,7 @@
                                :variations="variations"/>
       </template>
 
-      <a @click.prevent="$modal.show('variations', item)"
+      <a @click.prevent="item.variations[Object.keys(item.variations)].length > 1 ? $modal.show('variations', item) :  $modal.show('variation', item)"
          class="transition no-underline duration-300 ease-in-out uppercase bg-gray-200 border border-gray-200
         text-gray-700 hover:text-black px-4 py-2 text-sm font-bold rounded-full"
       >

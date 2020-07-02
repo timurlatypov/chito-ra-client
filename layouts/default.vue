@@ -5,21 +5,21 @@
     <TheReviewFormModal/>
     <LesnayaMapModal/>
     <KazakovaMapModal/>
-    <SushevkaMapModal/>
     <AuthModal/>
     <ProductVariationsModal/>
+    <ProductVariationSingleModal/>
   </div>
 </template>
 
 <script>
-  import {mapGetters, mapMutations, mapActions} from 'vuex'
+  import {mapGetters, mapActions} from 'vuex'
   import TheMenuCardModal from '@/components/globals/modals/TheMenuCardModal'
   import TheReviewFormModal from '@/components/globals/modals/TheReviewFormModal'
   import LesnayaMapModal from '@/components/globals/modals/LesnayaMapModal'
   import KazakovaMapModal from '@/components/globals/modals/KazakovaMapModal'
-  import SushevkaMapModal from '@/components/globals/modals/SushevkaMapModal'
   import AuthModal from '@/components/globals/modals/auth/AuthModal'
   import ProductVariationsModal from '@/components/globals/modals/variations/ProductVariationsModal'
+  import ProductVariationSingleModal from '@/components/globals/modals/variations/ProductVariationSingleModal'
 
   export default {
     components: {
@@ -27,9 +27,9 @@
       TheReviewFormModal,
       LesnayaMapModal,
       KazakovaMapModal,
-      SushevkaMapModal,
       AuthModal,
-      ProductVariationsModal
+      ProductVariationsModal,
+      ProductVariationSingleModal,
     },
     computed: {
       ...mapGetters({
