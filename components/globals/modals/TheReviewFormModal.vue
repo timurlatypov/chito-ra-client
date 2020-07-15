@@ -13,7 +13,6 @@
                                     <select v-model="data.restaurant">
                                         <option value="" disabled>Выберите из списка ...</option>
                                         <option value="«Чито-ра» на Казакова">«Чито-ра» на Казакова</option>
-                                        <option value="«Чито-ра» на Сущевском Валу">«Чито-ра» на Сущевском Валу</option>
                                         <option value="«Чито-ра» на Лесной">«Чито-ра» на Лесной</option>
                                     </select>
                                 </div>
